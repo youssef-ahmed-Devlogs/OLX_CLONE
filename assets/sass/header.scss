@@ -10,6 +10,9 @@ header {
   padding: 0 10px;
   box-shadow: $box-shadow-1 rgba($color: $primary-blue, $alpha: 0.3);
   margin-top: 30px;
+  margin-bottom: 30px;
+  position: sticky;
+  z-index: 2;
 
   .left-header {
     display: flex;
@@ -29,6 +32,21 @@ header {
     display: flex;
     align-items: center;
     gap: 0 30px;
+
+    .notifications-settings {
+      .notification-icon {
+        cursor: pointer;
+        position: relative;
+
+        .badge {
+          position: absolute;
+          top: -6px;
+          left: -9px;
+          font-size: 0.65em;
+          padding: 0.25em 0.45em;
+        }
+      }
+    }
 
     .lang {
       .lang_trigger_icon {

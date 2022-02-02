@@ -1,9 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-<<<<<<< HEAD
-=======
   color: #363c60;
->>>>>>> 8ac307110eea6dac35b044d61c873110f9d195f6
 }
 
 a {
@@ -51,6 +48,11 @@ ul {
 .button-secondary-blue.button-border {
   color: #5a75e6;
   border: 1px solid #5a75e6;
+}
+
+.badge-danger {
+  color: #d83d3d;
+  background: rgba(216, 61, 61, 0.1);
 }
 
 @media (min-width: 1800px) {

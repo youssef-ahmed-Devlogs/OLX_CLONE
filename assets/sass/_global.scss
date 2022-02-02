@@ -1,9 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-<<<<<<< HEAD
-=======
-color: $dark-blue;
->>>>>>> 8ac307110eea6dac35b044d61c873110f9d195f6
+  color: $dark-blue;
 }
 
 // Generals
@@ -58,4 +55,13 @@ ul {
   }
 }
 
-// CARDS
+// BADGES
+.badge {
+}
+
+.badge-danger {
+  @extend .badge;
+
+  color: $danger;
+  background: rgba($danger, $alpha: 0.1);
+}
