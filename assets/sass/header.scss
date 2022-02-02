@@ -1,0 +1,25 @@
+@import "./variables";
+
+header {
+  background-color: $light-blue;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left-header {
+    .logo {
+      display: block;
+    }
+  }
+
+  .lang {
+    .lang_trigger_icon {
+      img {
+        width: 40px;
+
+        object-fit: cover;
+      }
+    }
+  }
+}
