@@ -1,0 +1,13 @@
+header {
+  background-color: #eef0fd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .left-header .logo {
+  display: block;
+}
+header .lang .lang_trigger_icon img {
+  width: 40px;
+  object-fit: cover;
+}

@@ -36,3 +36,14 @@ a:hover {
   background-color: #5a75e6;
   box-shadow: -1px 4px 9px 0px rgba(90, 117, 230, 0.49);
 }
+
+@media (min-width: 1800px) {
+  .container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    max-width: 1650px;
+  }
+}
