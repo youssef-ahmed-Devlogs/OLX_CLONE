@@ -2,23 +2,97 @@
 
 header {
   background-color: $light-blue;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 80px;
+  border-radius: $border-radius-10;
+  padding: 0 10px;
+  box-shadow: $box-shadow-1 rgba($color: $primary-blue, $alpha: 0.3);
+  margin-top: 30px;
 
   .left-header {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+
     .logo {
       display: block;
+
+      img {
+        width: 65px;
+      }
     }
   }
 
-  .lang {
-    .lang_trigger_icon {
-      img {
-        width: 40px;
+  .right-header {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
 
-        object-fit: cover;
+    .lang {
+      .lang_trigger_icon {
+        cursor: pointer;
+
+        img {
+          width: 30px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .user-settings {
+      position: relative;
+      .user-icon {
+        cursor: pointer;
+
+        img {
+          width: 55px;
+          height: 55px;
+          object-fit: cover;
+          border-radius: $border-radius-rouned;
+        }
+      }
+
+      .user-settings-list {
+        position: absolute;
+        right: 0;
+        top: 80px;
+        background-color: $light-blue;
+        width: 300px;
+        padding: 10px;
+        border-radius: $border-radius-8;
+
+        .user-settings-link {
+          display: block;
+          color: $secondary-blue;
+          padding: 5px;
+          border-radius: $border-radius-4;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          transition: $transition;
+          font-size: $head-4;
+
+          &:not(:last-child) {
+            margin-bottom: 5px;
+          }
+
+          &:hover {
+            background-color: rgba($white, $alpha: 0.4);
+          }
+
+          img,
+          i {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: $head-3;
+            color: $primary-blue;
+          }
+        }
       }
     }
   }

@@ -1,24 +1,23 @@
 body {
   font-family: "Roboto", sans-serif;
-  color: $secondary-blue;
-  transition: $transition;
-  margin: 30px;
 }
 
 // Generals
 a {
   text-decoration: none;
+}
 
-  &:hover {
-    color: $white;
-  }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 // BUTTONS
 .button {
   display: inline-block;
   padding: 8px 10px;
-  border-radius: 5px;
+  border-radius: $border-radius-6;
   font-size: $head-4;
   font-weight: 500;
   display: flex;
@@ -26,20 +25,33 @@ a {
   gap: 0 10px;
   width: max-content;
   transition: $transition;
+  &:hover {
+    box-shadow: none;
+    color: $white;
+  }
+}
+
+.button-border {
+  background: transparent !important;
 }
 
 .button-primary-blue {
   @extend .button;
   color: $white;
   background-color: $primary-blue;
-  box-shadow: -1px 4px 9px 0px rgba($primary-blue, $alpha: 0.49);
+  box-shadow: -1px 4px 9px 0px rgba($primary-blue, $alpha: 0.2);
 }
 
 .button-secondary-blue {
   @extend .button;
   color: $white;
   background-color: $secondary-blue;
-  box-shadow: -1px 4px 9px 0px rgba($secondary-blue, $alpha: 0.49);
+  box-shadow: -1px 4px 9px 0px rgba($secondary-blue, $alpha: 0.2);
+
+  &.button-border {
+    color: $secondary-blue;
+    border: 1px solid $secondary-blue;
+  }
 }
 
 // CARDS
