@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.7"
+  },
+  "name": "devlogs_ad",
+  "description": "Start",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youssef-ahmed-Devlogs/Devlogs_Ad.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youssef-ahmed-Devlogs/Devlogs_Ad/issues"
+  },
+  "homepage": "https://github.com/youssef-ahmed-Devlogs/Devlogs_Ad#readme"
+}
