@@ -1,0 +1,37 @@
+.users-icon {
+  cursor: pointer;
+  position: relative;
+}
+.users-icon img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  border: 10px solid #fff;
+  box-shadow: 0px 0px 0px 15px #000;
+}
+
+.updata-img-user {
+  position: relative;
+  bottom: 50px;
+  cursor: pointer;
+  font-size: 25px;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  filter: brightness(0.5);
+  margin: auto;
+}
+.updata-img-user:hover {
+  filter: drop-shadow(2px 4px 6px black);
+}
+.updata-img-user i {
+  display: initial;
+}
