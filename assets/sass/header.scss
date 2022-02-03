@@ -80,6 +80,7 @@ header {
         width: 300px;
         padding: 10px;
         border-radius: $border-radius-8;
+        display: none;
 
         .user-settings-link {
           display: block;
