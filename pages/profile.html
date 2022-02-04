@@ -133,21 +133,17 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="Ads">
-                  <div class="tabing">
+                  <div class="tabing container">
                     <h2>Ads</h2>
-                    <ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-left: auto;">
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">List</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">image</button>
-                      </li>
+                    <ul>
+                      <li class="active" data-tabs=".List">List</li>
+                      <li data-tabs=".Image">Image</li>
                     </ul>
-                    <div class="tab-content" id="myTabContent">
-                      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
-                      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
-                      
-                    </div>
+                    
+                  </div>
+                  <div class="tabs container">
+                    <div class="List">List Div</div>
+                    <div class="Image">Iamge Div</div>
                   </div>
                 </div>
               </div>
@@ -163,6 +159,7 @@
     <!-- END FOOTER SECTION -->
 
     <script src="/assets/plugins/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/proflie.js"></script>
   </body>
 </html>

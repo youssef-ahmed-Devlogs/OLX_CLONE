@@ -84,3 +84,28 @@
   display: flex;
   justify-content: space-around;
 }
+.User-Ads .Ads .tabing ul {
+  margin-left: auto;
+}
+.User-Ads .Ads .tabing ul li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #714879;
+  filter: blur(1px);
+  transition: 0.4s ease-in-out;
+}
+.User-Ads .Ads .tabing ul li:hover {
+  color: #363c60;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.User-Ads .Ads .tabing ul li.active {
+  filter: none;
+}
+.User-Ads .Ads .tabs {
+  padding: 10px;
+}
+.User-Ads .Ads .tabs div:not(:first-child) {
+  display: none;
+}
