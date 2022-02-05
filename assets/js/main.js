@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // START HEADER SECTION
 const userSettings = document.querySelector(".user-settings");
 const userIcon = document.querySelector(".user-icon");
@@ -23,7 +22,7 @@ window.addEventListener("click", (e) => {
   }
 });
 // END HEADER SECTION
-=======
+
 // Start
 
 const swiper = new Swiper(".swiper", {
@@ -46,4 +45,3 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
->>>>>>> 72ca172b9bdcd9cfe7e04c4fccea078e7dbfafbe
