@@ -1,119 +1,111 @@
-.porflie-user {
-  background: #fff;
-  border-radius: 0.4rem;
-  padding: 0;
+.User-Information .users-icon {
+  cursor: pointer;
   position: relative;
+}
+.User-Information .users-icon img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
   display: block;
-  margin-bottom: 30px;
-  width: 100%;
+  margin: auto;
+  border: 10px solid #fff;
+  padding: 10px;
+  box-shadow: 0px 0px 0px 15px #f0f0f0;
 }
-.porflie-user .viewer_detail_wraps {
-  width: 100%;
+.User-Information .updata-img-user {
   position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.porflie-user .img-content {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  position: relative;
-  margin-right: 1rem;
-}
-.porflie-user .img-content img {
-  border-radius: 50%;
-}
-.porflie-user .viewer_status {
-  position: absolute;
-  right: 10px;
-  bottom: 5px;
-  background: #4caf50;
-  padding: 0 15px;
+  bottom: 50px;
+  cursor: pointer;
+  font-size: 25px;
+  display: block;
   text-align: center;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  border-radius: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
   color: #fff;
-  height: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 0;
+  filter: brightness(0.5);
+  margin: auto;
 }
-.porflie-user .caption {
-  flex: 1;
-  display: block;
+.User-Information .updata-img-user:hover {
+  filter: drop-shadow(2px 4px 6px black);
+}
+.User-Information .updata-img-user i {
+  display: initial;
+}
+.User-Information .user-caption h3 {
+  font-size: 20px;
+}
+.User-Information .user-caption ul {
   text-align: center;
-  margin-top: 10px;
-}
-.porflie-user .caption .h5 {
-  display: inline-block;
-  margin-bottom: 5px;
-  padding: 3px 12px;
-  background: #363c60;
-  color: #4d6ae2;
-  border-radius: 2px;
-  font-size: 12px;
-}
-.porflie-user .caption h4 {
-  line-height: 26px;
-  font-size: 21px;
-  margin-bottom: 1px;
-  color: #363c60;
-  font-weight: 600;
-  text-transform: capitalize;
-  font-family: Poppins, sans-serif;
-}
-.porflie-user .caption ul:last-child {
-  margin: 0;
-}
-.porflie-user .caption li {
-  display: inline-block;
-  color: #77829e;
+  margin-top: 20px;
   list-style: none;
-  margin-right: 1rem;
 }
-.porflie-user .caption strong {
-  color: #ffffff;
-}
-.porflie-user .caption .li {
+.User-Information .user-caption ul li {
+  display: inline-block;
   width: 34px;
   height: 34px;
   line-height: 34px;
   border-radius: 50%;
-  text-align: center;
   margin-bottom: 20px;
-  font-size: 12px;
   margin-right: 12px;
   box-shadow: 0 0 0 3px #f1f3f7 !important;
   border: 2px solid #fff;
 }
-.porflie-user .caption i {
-  font-style: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-}
-.porflie-user .caption .started {
+.User-Information .user-caption ul .started {
   color: #d83d3d;
   background: rgba(216, 61, 61, 0.1);
 }
-.porflie-user .caption .medium {
+.User-Information .user-caption ul .medium {
   color: #009688;
   background: rgba(0, 150, 136, 0.1);
 }
-.porflie-user .caption .platinum {
+.User-Information .user-caption ul .platinum {
   color: #ff9800;
   background: rgba(255, 152, 0, 0.1);
 }
-.porflie-user .caption .elite-unlock {
+.User-Information .user-caption ul .elite-unlock {
   background: #f4f5f7 !important;
   color: #3b5b88 !important;
 }
-.porflie-user .caption .power-unlock {
+.User-Information .user-caption ul .power-unlock {
   background: #f4f5f7 !important;
   color: #3b5b88 !important;
+}
+
+.User-Ads .Ads {
+  padding: 10px;
+  background-color: #f0f0f0;
+  height: 300px;
+}
+.User-Ads .Ads .tabing {
+  display: flex;
+  justify-content: space-around;
+}
+.User-Ads .Ads .tabing ul {
+  margin-left: auto;
+}
+.User-Ads .Ads .tabing ul li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #714879;
+  filter: blur(1px);
+  transition: 0.4s ease-in-out;
+}
+.User-Ads .Ads .tabing ul li:hover {
+  color: #363c60;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.User-Ads .Ads .tabing ul li.active {
+  filter: none;
+}
+.User-Ads .Ads .tabs {
+  padding: 10px;
+}
+.User-Ads .Ads .tabs div:not(:first-child) {
+  display: none;
 }

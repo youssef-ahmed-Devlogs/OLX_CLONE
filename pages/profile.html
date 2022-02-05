@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../assets/plugins/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../assets/plugins/css/all.min.css" />
     <link rel="stylesheet" href="../assets/css/proflie.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
     <link rel="stylesheet" href="../assets/css/main.css" />
 
     <link
@@ -24,47 +25,132 @@
   </head>
   <body>
     <!-- START HEADER SECTION -->
-    <header></header>
+    <div class="container">
+      <header>
+        <div class="left-header">
+          <a href="/index.html" class="logo">
+            <img src="/assets/icons/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="right-header">
+          <div class="lang">
+            <span class="lang_trigger_icon">
+              <img
+                src="/assets/icons/eg_flag.png"
+                alt="arabic"
+                title="arabic"
+              />
+            </span>
+          </div>
+          <a href="addAd.html" class="button-border button-secondary-blue">
+            <i class="fas fa-plus"></i>
+            <span>Add Ad</span>
+          </a>
+          <div class="user-settings">
+            <div class="user-icon">
+              <img
+                src="../assets/icons/user-pic1.jpg"
+                alt="user picture"
+                title="user picture"
+              />
+            </div>
+
+            <ul class="user-settings-list">
+              <a href="profile.html" class="user-settings-link">
+                <div class="user-icon">
+                  <img
+                    src="../assets/icons/user-pic1.jpg"
+                    alt="user picture"
+                    title="user picture"
+                  />
+                </div>
+                Profile
+              </a>
+              <a href="myAds.html" class="user-settings-link">
+                <i class="fas fa-ad"></i>
+                My Ads
+              </a>
+              <a href="messages.html" class="user-settings-link">
+                <i class="fas fa-envelope"></i>
+                Messages
+              </a>
+              <a href="settings.html" class="user-settings-link">
+                <i class="fas fa-cog"></i>
+                Settings
+              </a>
+              <a href="logout.html" class="user-settings-link">
+                <i class="fas fa-sign-out-alt"></i>
+                Logout
+              </a>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div>
     <!-- END HEADER SECTION -->
 
     <!-- START MAIN SECTION -->
-    <main>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="porflie-user d-flex">
-            <div class="viewer_detail_wraps">
-              <div class="img-content">
-                <img src="../assets/images/user-5.jpg" alt="" class="img-fluid" />
-                <div class="viewer_status">online</div>
-              </div>
-              <div class="caption">
-                <div class="h5">Egypt , Giza</div>
-                <div class="h4">
-                  <h4>UserEnd</h4>
+    <main class="proflie-page">
+      <!-- Start************************User-Information*************************** -->
+      <section class="User-Information">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+                <div class="users-icon">
+                    <img src="../assets/icons/user-pic1.jpg"  alt="user picture" title="updata user picture"/>
+                  </div>
+                  <!-- Up Data Img User Olx -->
+                  <div class="updata-img-user">
+                    <i class="fa fa-camera"></i>
+                  </div>
+                  <!-- User Caption => title  -->
+                  <div class="user-caption">
+                    <h2 class="user-name text-center">Abdallah Rabeh</h2>
+                    <h3 class="text-center">Joined since 2015</h3>
+                    <h3 class="text-center">Egypt Cairo</h3>
+                    <ul class="badge_info">
+                      <li class="li started"><i class="fas fa-rocket"></i></li>
+                      <li class="li medium"><i class="fas fa-trophy"></i></li>
+                      <li class="li platinum">
+                        <i class="fas fa-thumbs-up"></i>
+                      </li>
+                      <li class="li elite-unlock">
+                        <i class="fas fa-medal"></i>
+                      </li>
+                      <li class="li power-unlock">
+                        <i class="fas fa-crown"></i>
+                      </li>
+                    </ul>
                 </div>
-                <span class="viewer_location mb-5">
-                  joined since 2018
-                  </span>
-                <ul class="badge_info mt-3">
-                  <li class="li started"><i class="fas fa-rocket"></i></li>
-                  <li class="li medium"><i class="fas fa-trophy"></i></li>
-                  <li class="li platinum">
-                    <i class="fas fa-thumbs-up"></i>
-                  </li>
-                  <li class="li elite-unlock">
-                    <i class="fas fa-medal"></i>
-                  </li>
-                  <li class="li power-unlock">
-                    <i class="fas fa-crown"></i>
-                  </li>
-                </ul>
-              </div>
-            </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- End************************User-Information****************************** -->
+      <!--? Start**********************User-Ads*************************************  -->
+        <section class="User-Ads p-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="Ads">
+                  <div class="tabing container">
+                    <h2>Ads</h2>
+                    <ul>
+                      <li class="active" data-tabs=".List">List</li>
+                      <li data-tabs=".Image">Image</li>
+                    </ul>
+                    
+                  </div>
+                  <div class="tabs container">
+                    <div class="List">List Div</div>
+                    <div class="Image">Iamge Div</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      <!--! End************************User-Ads*************************************  -->
     </main>
     <!-- END MAIN SECTION -->
 
@@ -72,7 +158,8 @@
     <footer></footer>
     <!-- END FOOTER SECTION -->
 
-    <script src="../assets/plugins/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <script src="/assets/plugins/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/proflie.js"></script>
   </body>
 </html>
