@@ -78,7 +78,6 @@
 .User-Ads .Ads {
   padding: 10px;
   background-color: #f0f0f0;
-  height: 300px;
 }
 .User-Ads .Ads .tabing {
   display: flex;
@@ -106,6 +105,36 @@
 .User-Ads .Ads .tabs {
   padding: 10px;
 }
-.User-Ads .Ads .tabs div:not(:first-child) {
+.User-Ads .Ads .tabs .div:not(:first-child) {
   display: none;
+}
+.User-Ads .Ads .tabs .Image, .User-Ads .Ads .tabs .List {
+  display: flex;
+  justify-content: space-around;
+}
+.User-Ads .Ads .tabs .Image .title-table, .User-Ads .Ads .tabs .List .title-table {
+  padding: 20px;
+  flex: 2;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+.User-Ads .Ads .tabs .Image .title-table .link, .User-Ads .Ads .tabs .List .title-table .link {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.User-Ads .Ads .tabs .Image .img-table img, .User-Ads .Ads .tabs .List .img-table img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.User-Ads .Ads .tabs .List .img-table img {
+  width: 30% !important;
+}
+
+.User-ads-log {
+  background-color: #f0f0f0;
+  padding: 10px;
+  height: 300px;
 }

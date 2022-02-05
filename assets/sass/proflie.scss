@@ -84,7 +84,7 @@
     .Ads {
         padding: 10px;
         background-color: $bg-section;
-        height: 300px;
+
         .tabing {
             display: flex;
             justify-content: space-around;
@@ -102,17 +102,48 @@
                         color: $dark-blue;
                         filter: drop-shadow(2px 4px 6px black);
                     }
-                    &.active{
-                    filter: none;
+                    &.active {
+                        filter: none;
                     }
                 }
             }
         }
         .tabs {
             padding: 10px;
-            div:not(:first-child) {
+            .div:not(:first-child) {
                 display: none;
+            }
+            .Image,.List {
+                display: flex;
+                justify-content: space-around;
+                .title-table {
+                    padding: 20px;
+                    flex: 2;
+                    background-color: $white;
+                    margin-bottom: 20px;
+                    .link {
+                        padding: 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 20px;
+                    }
+                }
+                .img-table {
+                    img {
+                        width: 100%;
+                        display: block;
+                        margin: auto;
+                    }
+                }
+            }
+            .List .img-table img{
+                width: 30% !important;
             }
         }
     }
+}
+.User-ads-log{
+    background-color:$bg-section;
+    padding: 10px;
+    height: 300px;
 }

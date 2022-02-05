@@ -3,7 +3,7 @@ tabLink = ()=>{
 // variables tab Ads
 let li = document.querySelectorAll(".User-Ads li");
 let liArray = Array.from(li);
-let tab = document.querySelectorAll(".tabs > div");
+let tab = document.querySelectorAll(".tabs > .div");
 let tabArray = Array.from(tab);
 // fun tab Ads
 
@@ -17,7 +17,7 @@ let tabArray = Array.from(tab);
       tabArray.forEach((div) => {
         div.style.display = "none";
       });
-     document.querySelector(e.currentTarget.dataset.tabs).style.display = "block";
+     document.querySelector(e.currentTarget.dataset.tabs).style.display = "flex";
         
     });
   });
