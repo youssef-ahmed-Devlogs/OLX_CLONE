@@ -3,12 +3,10 @@
 .model-prop {
   font-size: 15px;
 }
-.main-content {
-  img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-  }
+.main-img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
 }
 .addDetails-img {
   text-align: center;
@@ -22,12 +20,14 @@
 .left-star {
   span {
     display: block;
+    cursor: pointer;
   }
 }
 
 .right-report {
   span {
     display: block;
+    cursor: pointer;
   }
 }
 
@@ -40,7 +40,7 @@
   border-bottom-left-radius: 0;
 }
 
-.unstyled {
+.product-info ul {
   list-style: none;
   li {
     padding: 10px 12px;
@@ -72,4 +72,97 @@
 }
 .calling {
   margin-top: 4px;
+}
+.another-addOfUser {
+  padding-top: 20px;
+}
+.user-item-1 {
+  border-bottom: 1px solid;
+  box-shadow: 0 0 4px #eee;
+}
+.user-item-1 img {
+  width: 100%;
+  height: auto !important;
+  object-fit: cover;
+}
+.user-item-1 p {
+  text-align: center;
+  padding: 4px 3px;
+  line-height: 1.4;
+}
+.related {
+  padding-top: 25px;
+  font-size: 33px;
+  font-weight: bold;
+  color: $secondary-blue;
+}
+.related-card-1 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  position: relative;
+
+  .card {
+    border: 0 !important;
+  }
+}
+.related-card-1:hover img {
+  padding: 4px;
+  transition: padding $transition;
+}
+.related-card-1:hover .card {
+  border-bottom: 2px solid $primary-blue;
+  transition: border 0.2s ease-in-out;
+}
+
+.important-tips {
+  padding: 25px 7px;
+  width: 250px;
+  max-width: 400px;
+  height: auto;
+  margin-top: 10px;
+  background-color: $light-blue;
+  color: $secondary-blue;
+
+  h3 {
+    font-size: 17px;
+    color: $secondary-blue;
+  }
+
+  ul {
+    list-style: none;
+  }
+  li {
+    display: flex;
+  }
+  li div {
+    margin-right: 3px;
+  }
+}
+.swiper.last-one {
+  width: 100%;
+  height: 400px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide.last img {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .swiper-slide.last {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (max-width: 768px) {
+  .swiper-slide.last {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }

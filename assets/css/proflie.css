@@ -1,0 +1,111 @@
+.User-Information .users-icon {
+  cursor: pointer;
+  position: relative;
+}
+.User-Information .users-icon img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  border: 10px solid #fff;
+  padding: 10px;
+  box-shadow: 0px 0px 0px 15px #f0f0f0;
+}
+.User-Information .updata-img-user {
+  position: relative;
+  bottom: 50px;
+  cursor: pointer;
+  font-size: 25px;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  filter: brightness(0.5);
+  margin: auto;
+}
+.User-Information .updata-img-user:hover {
+  filter: drop-shadow(2px 4px 6px black);
+}
+.User-Information .updata-img-user i {
+  display: initial;
+}
+.User-Information .user-caption h3 {
+  font-size: 20px;
+}
+.User-Information .user-caption ul {
+  text-align: center;
+  margin-top: 20px;
+  list-style: none;
+}
+.User-Information .user-caption ul li {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin-right: 12px;
+  box-shadow: 0 0 0 3px #f1f3f7 !important;
+  border: 2px solid #fff;
+}
+.User-Information .user-caption ul .started {
+  color: #d83d3d;
+  background: rgba(216, 61, 61, 0.1);
+}
+.User-Information .user-caption ul .medium {
+  color: #009688;
+  background: rgba(0, 150, 136, 0.1);
+}
+.User-Information .user-caption ul .platinum {
+  color: #ff9800;
+  background: rgba(255, 152, 0, 0.1);
+}
+.User-Information .user-caption ul .elite-unlock {
+  background: #f4f5f7 !important;
+  color: #3b5b88 !important;
+}
+.User-Information .user-caption ul .power-unlock {
+  background: #f4f5f7 !important;
+  color: #3b5b88 !important;
+}
+
+.User-Ads .Ads {
+  padding: 10px;
+  background-color: #f0f0f0;
+  height: 300px;
+}
+.User-Ads .Ads .tabing {
+  display: flex;
+  justify-content: space-around;
+}
+.User-Ads .Ads .tabing ul {
+  margin-left: auto;
+}
+.User-Ads .Ads .tabing ul li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #714879;
+  filter: blur(1px);
+  transition: 0.4s ease-in-out;
+}
+.User-Ads .Ads .tabing ul li:hover {
+  color: #363c60;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.User-Ads .Ads .tabing ul li.active {
+  filter: none;
+}
+.User-Ads .Ads .tabs {
+  padding: 10px;
+}
+.User-Ads .Ads .tabs div:not(:first-child) {
+  display: none;
+}
