@@ -20,7 +20,7 @@ a:hover {
   align-items: center;
   gap: 0 10px;
   width: max-content;
-  transition: 0.4 ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .button-primary-blue {
