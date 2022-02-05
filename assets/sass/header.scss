@@ -34,16 +34,64 @@ header {
     gap: 0 30px;
 
     .notifications-settings {
+      position: relative;
+      height: 55px;
+
+      display: flex;
+      align-items: center;
       .notification-icon {
         cursor: pointer;
         position: relative;
 
         .badge {
           position: absolute;
-          top: -6px;
+          top: -8px;
           left: -9px;
           font-size: 0.65em;
           padding: 0.25em 0.45em;
+        }
+      }
+
+      .notifications-settings-list {
+        position: absolute;
+        right: 0;
+        top: 80px;
+        background-color: $light-blue;
+        width: 300px;
+        padding: 10px;
+        border-radius: $border-radius-8;
+        display: none;
+
+        .notifications-head {
+          position: sticky;
+        }
+
+        .notifications {
+          overflow-y: scroll;
+          height: 300px;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+
+        .notification-link {
+          display: block;
+          color: $secondary-blue;
+          padding: 5px;
+          border-radius: $border-radius-4;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          transition: $transition;
+          font-size: $head-4;
+
+          &:not(:last-child) {
+            margin-bottom: 5px;
+          }
+
+          &:hover {
+            background-color: rgba($white, $alpha: 0.4);
+          }
         }
       }
     }

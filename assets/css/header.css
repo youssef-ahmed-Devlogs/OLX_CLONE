@@ -28,16 +28,59 @@ header .right-header {
   align-items: center;
   gap: 0 30px;
 }
+header .right-header .notifications-settings {
+  position: relative;
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
 header .right-header .notifications-settings .notification-icon {
   cursor: pointer;
   position: relative;
 }
 header .right-header .notifications-settings .notification-icon .badge {
   position: absolute;
-  top: -6px;
+  top: -8px;
   left: -9px;
   font-size: 0.65em;
   padding: 0.25em 0.45em;
+}
+header .right-header .notifications-settings .notifications-settings-list {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  background-color: #eef0fd;
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  display: none;
+}
+header .right-header .notifications-settings .notifications-settings-list .notifications-head {
+  position: sticky;
+}
+header .right-header .notifications-settings .notifications-settings-list .notifications {
+  overflow-y: scroll;
+  height: 300px;
+}
+header .right-header .notifications-settings .notifications-settings-list .notifications::-webkit-scrollbar {
+  display: none;
+}
+header .right-header .notifications-settings .notifications-settings-list .notification-link {
+  display: block;
+  color: #5a75e6;
+  padding: 5px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.4s ease-in-out;
+  font-size: 15px;
+}
+header .right-header .notifications-settings .notifications-settings-list .notification-link:not(:last-child) {
+  margin-bottom: 5px;
+}
+header .right-header .notifications-settings .notifications-settings-list .notification-link:hover {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 header .right-header .lang .lang_trigger_icon {
   cursor: pointer;

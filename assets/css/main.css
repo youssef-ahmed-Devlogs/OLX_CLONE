@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #363c60;
@@ -70,6 +76,22 @@ ul {
     padding: 4px 7px;
     font-size: 13px;
   }
+
+  .nav-links {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    position: relative;
+  }
+  header .right-header .notifications-settings {
+    position: initial;
+  }
+  header .right-header .notifications-settings .notifications-settings-list {
+    top: 93px;
+    width: 250px;
+  }
 }
 @media (max-width: 380px) {
   header {
@@ -110,5 +132,11 @@ header .right-header .user-settings .user-settings-list .user-settings-link i {
     width: 35px;
     height: 35px;
     font-size: 18px;
+  }
+  header .right-header .notifications-settings {
+    position: initial;
+  }
+  header .right-header .notifications-settings .notifications-settings-list {
+    top: 70px;
   }
 }

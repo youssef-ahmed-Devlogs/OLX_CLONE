@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: $dark-blue;
@@ -65,3 +71,10 @@ ul {
   color: $danger;
   background: rgba($danger, $alpha: 0.1);
 }
+
+// HEAD
+// .head {
+//   font-weight: bold;
+// }
+
+// .head-

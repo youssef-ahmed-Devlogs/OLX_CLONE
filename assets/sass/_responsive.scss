@@ -20,9 +20,29 @@
     padding: 4px 7px;
     font-size: $head-4;
   }
+
+  .nav-links {
+    display: none;
+  }
 }
 
 // START HEADER SECTION
+
+@media (max-width: 767px) {
+  header {
+    position: relative;
+    .right-header {
+      .notifications-settings {
+        position: initial;
+        .notifications-settings-list {
+          top: 93px;
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 380px) {
   $head-1: 31px;
   $head-2: 25px;
@@ -84,6 +104,13 @@
               font-size: $head-3;
             }
           }
+        }
+      }
+
+      .notifications-settings {
+        position: initial;
+        .notifications-settings-list {
+          top: 70px;
         }
       }
     }
