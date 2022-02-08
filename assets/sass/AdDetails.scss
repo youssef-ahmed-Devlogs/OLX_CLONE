@@ -10,12 +10,24 @@
 }
 .addDetails-img {
   text-align: center;
+  border: 2px solid $light-blue;
+  border-radius: 6px;
 }
+.right-section {
+}
+@media (max-width: 768px) {
+  .right-section {
+    margin-top: 10px;
+  }
+}
+
 .desc-of-items {
   background-color: $light-blue;
   padding: 10px 12px;
   font-size: 22px;
   object-fit: contain;
+  margin-top: 4px;
+  border-radius: 6px;
 }
 .left-star {
   span {
@@ -39,7 +51,11 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-
+.product-info {
+  border: 1px solid $light-blue;
+  margin-top: 5px;
+  border-radius: 6px;
+}
 .product-info ul {
   list-style: none;
   li {
@@ -52,7 +68,13 @@
 .product-desc {
   font-size: 15px;
   line-height: 1.4;
-  padding: 5px;
+  padding: 15px 12px;
+
+  border: 1px solid $light-blue;
+  margin-top: 9px;
+  border-radius: 6px;
+  border-radius: 6px;
+  margin-bottom: 12px;
 }
 
 .send-message,
@@ -74,7 +96,7 @@
   margin-top: 4px;
 }
 .another-addOfUser {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .user-item-1 {
   border-bottom: 1px solid;
@@ -97,16 +119,22 @@
   color: $secondary-blue;
 }
 .related-card-1 {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.1);
   position: relative;
+  border-radius: 4px;
+  border: 1px solid $light-blue;
+  transition: scale $transition;
+  transition: scale 0.4s ease;
+  border-radius: 6px;
 
   .card {
     border: 0 !important;
   }
 }
 .related-card-1:hover img {
-  padding: 4px;
-  transition: padding $transition;
+  // padding: 4px;
+  transform: scale(1.1);
+  transition: scale 0.4s ease;
 }
 .related-card-1:hover .card {
   border-bottom: 2px solid $primary-blue;
@@ -124,14 +152,20 @@
 
   h3 {
     font-size: 17px;
-    color: $secondary-blue;
+    color: $secondary-blue !important;
   }
 
+  .another-product_title {
+    color: $secondary-blue;
+    font-size: $head-2;
+    margin-top: 15px;
+  }
   ul {
     list-style: none;
   }
   li {
     display: flex;
+    padding: 6px 0;
   }
   li div {
     margin-right: 3px;

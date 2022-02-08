@@ -64,3 +64,21 @@ function swiperConf(slidesPerView, selector) {
 }
 
 // END SWIPER CONF
+
+// fancy box
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+  Toolbar: false,
+
+  caption: function (fancybox, carousel, slide) {
+    let caption = slide.caption;
+
+    return (
+      (caption.length ? caption + "<br />" : "") +
+      "Image " +
+      (slide.index + 1) +
+      " of " +
+      carousel.pages.length
+    );
+  },
+});
