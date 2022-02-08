@@ -68,7 +68,7 @@ function swiperConf(slidesPerView, selector) {
 // fancy box
 
 Fancybox.bind('[data-fancybox="gallery"]', {
-  Toolbar: false,
+  Toolbar: true,
 
   caption: function (fancybox, carousel, slide) {
     let caption = slide.caption;
