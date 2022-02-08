@@ -23,29 +23,44 @@ window.addEventListener("click", (e) => {
 });
 // END HEADER SECTION
 
-// Start
-function lastSlider() {
-  var swiper = new Swiper(".last-one", {
-    slidesPerView: 4,
+// START SWIPER CONF
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth <= 600) {
+    swiperConf(1, ".last-one");
+    swiperConf(1, ".first-one");
+  } else if (window.innerWidth <= 991) {
+    swiperConf(2, ".last-one");
+  } else if (window.innerWidth <= 1199) {
+    swiperConf(3, ".last-one");
+    swiperConf(2, ".first-one");
+  } else {
+    swiperConf(4, ".last-one");
+    swiperConf(3, ".first-one");
+  }
+});
+
+if (window.innerWidth <= 600) {
+  swiperConf(1, ".last-one");
+  swiperConf(1, ".first-one");
+} else if (window.innerWidth <= 991) {
+  swiperConf(2, ".last-one");
+} else if (window.innerWidth <= 1199) {
+  swiperConf(3, ".last-one");
+  swiperConf(2, ".first-one");
+} else {
+  swiperConf(4, ".last-one");
+  swiperConf(3, ".first-one");
+}
+
+function swiperConf(slidesPerView, selector) {
+  var swiper = new Swiper(selector, {
+    slidesPerView: slidesPerView,
     spaceBetween: 30,
     pagination: {
-      el: ".swiper-pagination",
       clickable: true,
     },
   });
 }
-lastSlider();
 
-function firstSlidr() {
-  var swiper = new Swiper(".first-one", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-}
-firstSlidr();
-
-function resposive(slidesPerView, css) {}
+// END SWIPER CONF
