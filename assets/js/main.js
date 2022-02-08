@@ -24,24 +24,28 @@ window.addEventListener("click", (e) => {
 // END HEADER SECTION
 
 // Start
+function lastSlider() {
+  var swiper = new Swiper(".last-one", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
+lastSlider();
 
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  loop: true,
+function firstSlidr() {
+  var swiper = new Swiper(".first-one", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
+firstSlidr();
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-});
+function resposive(slidesPerView, css) {}
