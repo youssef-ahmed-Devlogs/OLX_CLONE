@@ -50,82 +50,19 @@ window.addEventListener("click", (e) => {
 
 // END HEADER SECTION
 
-// START SWIPER CONF
-if (document.querySelector(".swiper") != null) {
-  window.addEventListener("resize", () => {
-    if (window.innerWidth <= 600) {
-      swiperConf(1, ".last-one");
-      swiperConf(1, ".first-one");
-    } else if (window.innerWidth <= 991) {
-      swiperConf(2, ".last-one");
-    } else if (window.innerWidth <= 1199) {
-      swiperConf(3, ".last-one");
-      swiperConf(2, ".first-one");
-    } else {
-      swiperConf(4, ".last-one");
-      swiperConf(3, ".first-one");
-    }
-  });
+// START HOME SLIDER
 
-  if (window.innerWidth <= 600) {
-    swiperConf(1, ".last-one");
-    swiperConf(1, ".first-one");
-  } else if (window.innerWidth <= 991) {
-    swiperConf(2, ".last-one");
-  } else if (window.innerWidth <= 1199) {
-    swiperConf(3, ".last-one");
-    swiperConf(2, ".first-one");
-  } else {
-    swiperConf(4, ".last-one");
-    swiperConf(3, ".first-one");
-  }
+swiperBigView(".home__slider");
 
-  // Swiper Conf for many cards
-  function swiperConf(slidesPerView, selector) {
-    var swiper = new Swiper(selector, {
-      slidesPerView: slidesPerView,
-      spaceBetween: 30,
-      lazy: true,
+// END HOME SLIDER
 
-      // breakpoints: {
-      //   640: {
-      //     slidesPerView: 2,
-      //     spaceBetween: 20,
-      //   },
-      //   768: {
-      //     slidesPerView: 4,
-      //     spaceBetween: 40,
-      //   },
-      //   1024: {
-      //     slidesPerView: 5,
-      //     spaceBetween: 50,
-      //   },
-      // },
-    });
-  }
+// START HOME PRODUCTS SLIDER
 
-  swiperBigView(".home__slider");
-  // Swiper Conf one big view
-  function swiperBigView(selector) {
-    var swiper = new Swiper(selector, {
-      lazy: true,
-      navigation: {
-        nextEl: `${selector}-next`,
-        prevEl: `${selector}-prev`,
-      },
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        clickable: true,
-        el: `${selector}-pagination`,
-      },
-    });
-  }
-}
+// END HOME PRODUCTS SLIDER
 
-// END SWIPER CONF
+swiperConf(".latest__products", 4);
+
+// START AD DETAILS PAGE
 
 // fancy box
 if (document.querySelector(".fancy-gallery") != null) {
@@ -142,6 +79,64 @@ if (document.querySelector(".fancy-gallery") != null) {
         " of " +
         carousel.pages.length
       );
+    },
+  });
+}
+
+swiperConf(".first-one", 3);
+swiperConf(".last-one", 4);
+
+// END AD DETAILS PAGE
+
+// Swiper Conf for many cards
+
+function swiperConf(selector, slidesPerView) {
+  var swiper = new Swiper(selector, {
+    lazy: true,
+    navigation: {
+      nextEl: `${selector}-next`,
+      prevEl: `${selector}-prev`,
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      clickable: true,
+      el: `${selector}-pagination`,
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1200: {
+        slidesPerView: slidesPerView,
+        spaceBetween: 20,
+      },
+    },
+  });
+}
+
+// Swiper Conf one big view
+function swiperBigView(selector) {
+  var swiper = new Swiper(selector, {
+    lazy: true,
+    navigation: {
+      nextEl: `${selector}-next`,
+      prevEl: `${selector}-prev`,
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      clickable: true,
+      el: `${selector}-pagination`,
     },
   });
 }
