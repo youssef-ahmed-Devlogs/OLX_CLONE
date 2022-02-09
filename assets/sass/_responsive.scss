@@ -11,6 +11,12 @@
 }
 
 @media (max-width: 1199px) {
+  .ads__banner {
+    img {
+      width: 100%;
+    }
+  }
+
   .swiper-button-next {
     right: 10px;
   }
@@ -52,6 +58,31 @@
 }
 
 @media (max-width: 500px) {
+  body {
+    margin-top: 60px;
+  }
+
+  .section__head {
+    font-size: 20px;
+  }
+
+  .py-5 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  .products__section {
+    .filter__content {
+      margin-bottom: 20px;
+    }
+  }
+
+  input,
+  select {
+    height: 40px;
+    font-size: 14px;
+  }
+
   header .left-header .logo img {
     width: 50px;
   }
@@ -89,6 +120,58 @@
 
   .user-settings-link i {
     font-size: 15px !important;
+  }
+
+  .swiper__container {
+    padding: 5px 10px;
+  }
+
+  .swiper__navigation .prev,
+  .swiper__navigation .next {
+    font-size: 10px;
+    padding: 3px 7px;
+  }
+
+  .swiper__pagination {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  .card__product {
+    .add__to__fav {
+      font-size: 16px;
+    }
+
+    .product__info {
+      bottom: 0;
+      height: initial;
+      .main__info {
+        .title__category {
+          .title {
+            font-size: 14px;
+          }
+
+          .category {
+            font-size: 11px;
+          }
+        }
+
+        .price {
+          font-size: 12px;
+          .currency {
+            font-size: 8px;
+          }
+        }
+      }
+
+      .date__location {
+        font-size: 12px;
+      }
+    }
   }
 }
 
@@ -162,9 +245,5 @@
         }
       }
     }
-  }
-
-  .home__slider img {
-    height: calc(100vh - 60px);
   }
 }

@@ -58,9 +58,10 @@ swiperBigView(".home__slider");
 
 // START HOME PRODUCTS SLIDER
 
-// END HOME PRODUCTS SLIDER
-
 swiperConf(".latest__products", 4);
+swiperConf(".top__products", 3);
+
+// END HOME PRODUCTS SLIDER
 
 // START AD DETAILS PAGE
 
@@ -109,10 +110,11 @@ function swiperConf(selector, slidesPerView) {
     breakpoints: {
       0: {
         slidesPerView: 1,
+        spaceBetween: 20,
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 10,
+        spaceBetween: 20,
       },
       1200: {
         slidesPerView: slidesPerView,
