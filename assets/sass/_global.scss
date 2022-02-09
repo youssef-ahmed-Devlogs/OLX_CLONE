@@ -104,9 +104,46 @@ ul {
   height: 2px;
 }
 
-// .section__head::after {
+.swiper__container {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid $light;
+}
 
-// }
+.swiper__navigation {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+
+  .prev,
+  .next {
+    background-color: $primary-orange;
+    color: $white;
+    font-size: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: $transition;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: $secondary-orange;
+    }
+  }
+}
+
+.swiper__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: $secondary-orange;
+  }
+}
 
 // CARDS
 .card__product {
