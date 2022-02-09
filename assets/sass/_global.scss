@@ -74,6 +74,40 @@ ul {
   background: rgba($danger, $alpha: 0.1);
 }
 
+// HEAD
+.section__head {
+  font-size: 28px;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  width: max-content;
+  font-weight: bold;
+}
+
+.section__head::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: $secondary-orange;
+  height: 3px;
+  width: 70%;
+}
+
+.section__head-sm {
+  @extend .section__head;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.section__head-sm::after {
+  height: 2px;
+}
+
+// .section__head::after {
+
+// }
+
 // CARDS
 .card__product {
   position: relative;
@@ -203,6 +237,7 @@ ul {
 
 .home__slider-pagination {
   position: absolute;
+  bottom: 25px !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,6 +262,7 @@ ul {
     border-radius: 8px;
     border: 1px solid $light;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 
     input,
     select {

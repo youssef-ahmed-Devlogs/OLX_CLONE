@@ -63,6 +63,34 @@ ul {
   background: rgba(216, 61, 61, 0.1);
 }
 
+.section__head, .section__head-sm {
+  font-size: 28px;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  width: max-content;
+  font-weight: bold;
+}
+
+.section__head::after, .section__head-sm::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #ffa26c;
+  height: 3px;
+  width: 70%;
+}
+
+.section__head-sm {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.section__head-sm::after {
+  height: 2px;
+}
+
 .card__product {
   position: relative;
   border-radius: 5px;
@@ -171,6 +199,7 @@ ul {
 
 .home__slider-pagination {
   position: absolute;
+  bottom: 25px !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,6 +221,7 @@ ul {
   border-radius: 8px;
   border: 1px solid #f1f1f1;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 .products__section .filter__content input,
 .products__section .filter__content select {
