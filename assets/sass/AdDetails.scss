@@ -1,7 +1,8 @@
 @import "./variables";
 
 .model-prop {
-  font-size: 15px;
+  font-size: 25px;
+  color: $dark-blue;
 }
 .main-img {
   width: 500px;
@@ -159,6 +160,7 @@
     color: $secondary-blue;
     font-size: $head-2;
     margin-top: 15px;
+    color: wheat;
   }
   ul {
     list-style: none;

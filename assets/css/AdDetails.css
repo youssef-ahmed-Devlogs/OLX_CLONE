@@ -1,5 +1,6 @@
 .model-prop {
-  font-size: 15px;
+  font-size: 25px;
+  color: #363c60;
 }
 
 .main-img {
@@ -161,6 +162,7 @@
   color: #5a75e6;
   font-size: 25px;
   margin-top: 15px;
+  color: wheat;
 }
 .important-tips ul {
   list-style: none;
