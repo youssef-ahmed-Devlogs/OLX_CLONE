@@ -7,6 +7,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: $black;
+  height: 5000px;
 }
 
 // Generals
@@ -72,6 +73,80 @@ ul {
   background: rgba($danger, $alpha: 0.1);
 }
 
+// CARDS
+.card__product {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: $box-shadow-1 rgba($black, $alpha: 0.1);
+  display: block;
+  text-decoration: none;
+
+  .product__img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  &:hover .product__info {
+    bottom: 0;
+  }
+
+  .product__info {
+    position: absolute;
+    bottom: -33px;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px 5px;
+    background-color: rgba($white, $alpha: 0.9);
+    transition: $transition;
+    height: 100px;
+
+    .main__info {
+      display: flex;
+      justify-content: space-between;
+
+      .title__category {
+        span {
+          display: block;
+        }
+
+        .title {
+          font-size: 18px;
+          color: $black;
+        }
+
+        .category {
+          color: $primary-orange;
+          font-size: 14px;
+          margin-top: -5px;
+        }
+      }
+
+      .price {
+        color: $white;
+        background-color: $secondary-orange;
+        width: max-content;
+        height: max-content;
+        padding: 3px 5px;
+        font-size: 15px;
+
+        .currency {
+          font-size: 11px;
+        }
+      }
+    }
+
+    .date__location {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+      color: rgba($black, $alpha: 0.5);
+    }
+  }
+}
+
 // Home slider
 .home__slider {
   width: 100%;
@@ -117,3 +192,36 @@ ul {
   height: 15px;
   background-color: $primary-orange;
 }
+
+// START PRODUCTS SECTION
+
+.products__section {
+  .filter__content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: $box-shadow-1 rgba($black, $alpha: 0.08);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid $light;
+    flex-wrap: wrap;
+
+    input,
+    select {
+      outline: none;
+      border: none;
+      background: none;
+      border-radius: 5px;
+      display: block;
+      flex: 1;
+      padding: 10px;
+      height: 50px;
+      background-color: rgba($secondary-orange, $alpha: 0.08);
+    }
+  }
+
+  .products__content {
+  }
+}
+
+// END PRODUCTS SECTION

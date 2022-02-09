@@ -100,10 +100,6 @@
   padding-left: 4px;
 }
 
-.calling {
-  margin-top: 4px;
-}
-
 .another-addOfUser {
   padding-top: 10px;
   border: 1px solid #f1f1f1;
@@ -159,7 +155,6 @@ h2.title_related {
 .important-tips {
   padding: 25px 7px;
   max-width: 400px;
-  height: auto;
   margin-top: 10px;
   background-color: #f1f1f1;
   color: #ffa26c;
