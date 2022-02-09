@@ -203,3 +203,31 @@
     grid-template-columns: 1fr;
   }
 }
+.form-content {
+  background-color: #f0f0f0;
+  padding: 20px 30px;
+}
+
+.form-content form input {
+  margin-top: 4px;
+  display: block;
+  width: 380px;
+  padding: 5px 3px;
+  border-radius: 4px;
+  outline: 0;
+  margin-bottom: 20px;
+  border: 1px solid #929292;
+}
+.form-content form textarea {
+  display: block;
+  width: 600px;
+  padding: 16px;
+  border: 1px solid #929292;
+  outline: 0;
+}
+
+.add_attachment {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
