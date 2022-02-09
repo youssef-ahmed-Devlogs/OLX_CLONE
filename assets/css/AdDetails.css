@@ -40,7 +40,6 @@
 }
 
 .triangle {
-  width: 250px;
   display: block;
   background-color: #f1f1f1;
   padding: 7px 15px;
@@ -63,6 +62,14 @@
   justify-content: space-between;
 }
 
+.product-info ul li {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.product-info ul li:last-of-type {
+  border-bottom: 0;
+}
+
 .product-desc {
   font-size: 15px;
   line-height: 1.4;
@@ -74,16 +81,19 @@
   margin-bottom: 12px;
 }
 
+.product_description {
+  color: #ffa26c;
+  font-size: 14px;
+}
+
 .send-message,
 .calling {
   display: flex;
   align-items: center;
-  margin: 0 4px;
   padding: 12px 15px;
   background-color: #ffa26c;
   color: white;
   font-weight: bold;
-  width: 250px;
 }
 .send-message .text,
 .calling .text {
@@ -96,6 +106,7 @@
 
 .another-addOfUser {
   padding-top: 10px;
+  border: 1px solid #f1f1f1;
 }
 
 .user-item-1 {
@@ -115,11 +126,11 @@
   line-height: 1.4;
 }
 
-.related {
+h2.title_related {
   padding-top: 25px;
-  font-size: 33px;
   font-weight: bold;
-  color: #ffa26c;
+  color: #f27933;
+  font-size: 25px;
 }
 
 .related-card-1 {
@@ -147,22 +158,11 @@
 
 .important-tips {
   padding: 25px 7px;
-  width: 250px;
   max-width: 400px;
   height: auto;
   margin-top: 10px;
   background-color: #f1f1f1;
   color: #ffa26c;
-}
-.important-tips h3 {
-  font-size: 17px;
-  color: #ffa26c !important;
-}
-.important-tips .another-product_title {
-  color: #ffa26c;
-  font-size: 25px;
-  margin-top: 15px;
-  color: wheat;
 }
 .important-tips ul {
   list-style: none;
@@ -177,7 +177,15 @@
 
 .swiper.last-one {
   width: 100%;
-  height: 400px;
+  border: 2px solid #f1f1f1;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.another-product_title {
+  color: #f27933;
+  font-size: 25px;
+  margin-top: 15px;
 }
 
 .swiper-slide {
@@ -232,4 +240,17 @@
   padding-top: 15px;
   display: flex;
   justify-content: space-between;
+}
+
+.product__desc .product_description {
+  font-weight: bold;
+  color: #f27933;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.contact_title {
+  padding-top: 12px;
+  color: #f27933;
+  font-size: 27px;
 }
