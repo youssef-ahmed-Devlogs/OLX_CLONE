@@ -8,6 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: $black;
   height: 5000px;
+  margin-top: 80px;
 }
 
 // Generals
@@ -82,14 +83,34 @@ ul {
   display: block;
   text-decoration: none;
 
+  .add__to__fav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: $light;
+    font-size: 22px;
+    cursor: pointer;
+    transition: $transition;
+    z-index: 1;
+
+    &:hover,
+    &.active {
+      color: rgb(255, 215, 39);
+    }
+  }
+
   .product__img {
     width: 100%;
-    height: 400px;
     object-fit: cover;
+    transition: $transition;
   }
 
   &:hover .product__info {
     bottom: 0;
+  }
+
+  &:hover .product__img {
+    transform: scale(1.2);
   }
 
   .product__info {
@@ -130,6 +151,7 @@ ul {
         height: max-content;
         padding: 3px 5px;
         font-size: 15px;
+        border-radius: 3px;
 
         .currency {
           font-size: 11px;

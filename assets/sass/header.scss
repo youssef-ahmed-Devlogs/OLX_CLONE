@@ -5,7 +5,10 @@ header {
   height: 80px;
   padding: 0 10px;
   box-shadow: $box-shadow-1 rgba($color: $black, $alpha: 0.09);
-  position: sticky;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
   z-index: 2;
 
   .header__content {
