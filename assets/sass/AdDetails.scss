@@ -124,19 +124,7 @@ h2.title_related {
   color: $primary-orange;
   font-size: 25px;
 }
-.related-card-1 {
-  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.1);
-  position: relative;
-  border-radius: 4px;
-  border: 1px solid $light;
-  transition: scale $transition;
-  transition: scale 0.4s ease;
-  border-radius: 6px;
 
-  .card {
-    border: 0 !important;
-  }
-}
 .related-card-1:hover img {
   // padding: 4px;
   transform: scale(1.1);

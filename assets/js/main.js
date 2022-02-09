@@ -83,8 +83,8 @@ if (document.querySelector(".fancy-gallery") != null) {
   });
 }
 
-swiperConf(".first-one", 3);
-swiperConf(".last-one", 4);
+swiperConf(".other__ads__seller", 3);
+swiperConf(".another__products", 4);
 
 // END AD DETAILS PAGE
 
