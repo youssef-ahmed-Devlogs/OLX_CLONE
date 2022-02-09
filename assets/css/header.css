@@ -1,16 +1,16 @@
 header {
-  background-color: #eef0fd;
+  background-color: #ffffff;
+  height: 80px;
+  padding: 0 10px;
+  box-shadow: 0 0 6px 0 rgba(34, 34, 34, 0.09);
+  position: sticky;
+  z-index: 2;
+}
+header .header__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  border-radius: 10px;
-  padding: 0 10px;
-  box-shadow: 0 0 6px 0 rgba(45, 66, 181, 0.3);
-  margin-top: 30px;
-  margin-bottom: 30px;
-  position: sticky;
-  z-index: 2;
 }
 header .left-header {
   display: flex;
@@ -37,6 +37,7 @@ header .right-header .notifications-settings {
 header .right-header .notifications-settings .notification-icon {
   cursor: pointer;
   position: relative;
+  top: 3px;
 }
 header .right-header .notifications-settings .notification-icon .badge {
   position: absolute;
@@ -49,14 +50,16 @@ header .right-header .notifications-settings .notifications-settings-list {
   position: absolute;
   right: 0;
   top: 80px;
-  background-color: #eef0fd;
+  background-color: #ffffff;
   width: 300px;
   padding: 10px;
   border-radius: 8px;
   display: none;
+  box-shadow: 0 0 6px rgba(34, 34, 34, 0.2);
 }
 header .right-header .notifications-settings .notifications-settings-list .notifications-head {
-  position: sticky;
+  color: #f27933;
+  font-weight: bold;
 }
 header .right-header .notifications-settings .notifications-settings-list .notifications {
   overflow-y: scroll;
@@ -67,7 +70,7 @@ header .right-header .notifications-settings .notifications-settings-list .notif
 }
 header .right-header .notifications-settings .notifications-settings-list .notification-link {
   display: block;
-  color: #5a75e6;
+  color: #222;
   padding: 5px;
   border-radius: 4px;
   display: flex;
@@ -80,7 +83,7 @@ header .right-header .notifications-settings .notifications-settings-list .notif
   margin-bottom: 5px;
 }
 header .right-header .notifications-settings .notifications-settings-list .notification-link:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 162, 108, 0.1);
 }
 header .right-header .lang .lang_trigger_icon {
   cursor: pointer;
@@ -105,15 +108,16 @@ header .right-header .user-settings .user-settings-list {
   position: absolute;
   right: 0;
   top: 80px;
-  background-color: #eef0fd;
+  background-color: #ffffff;
   width: 300px;
   padding: 10px;
   border-radius: 8px;
   display: none;
+  box-shadow: 0 0 6px rgba(34, 34, 34, 0.2);
 }
 header .right-header .user-settings .user-settings-list .user-settings-link {
   display: block;
-  color: #5a75e6;
+  color: #222;
   padding: 5px;
   border-radius: 4px;
   display: flex;
@@ -126,7 +130,7 @@ header .right-header .user-settings .user-settings-list .user-settings-link:not(
   margin-bottom: 5px;
 }
 header .right-header .user-settings .user-settings-list .user-settings-link:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 162, 108, 0.1);
 }
 header .right-header .user-settings .user-settings-list .user-settings-link img,
 header .right-header .user-settings .user-settings-list .user-settings-link i {
@@ -136,5 +140,5 @@ header .right-header .user-settings .user-settings-list .user-settings-link i {
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  color: #2d42b5;
+  color: #ffa26c;
 }

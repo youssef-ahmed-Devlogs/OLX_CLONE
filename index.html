@@ -16,6 +16,7 @@
       href="assets/icons/logo.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="../assets/plugins/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/plugins/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
@@ -23,115 +24,144 @@
   </head>
   <body>
     <!-- START HEADER SECTION -->
-    <div class="container">
-      <header>
-        <div class="left-header">
-          <a href="index.html" class="logo">
-            <img src="assets/icons/logo.png" alt="Logo" />
-          </a>
-        </div>
-        <div class="right-header">
-          <div class="notifications-settings">
-            <div class="notification-icon">
-              <span class="badge bg-danger">23</span>
-              <i class="fas fa-bell fa-lg"></i>
-            </div>
-
-            <ul class="notifications-settings-list">
-              <h6 class="notifications-head">Notifications</h6>
-              <div class="notifications">
-                <a href="#" class="notification-link">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                  exercitationem expedita distinctio accusamus debitis sapiente!
-                </a>
-                <a href="#" class="notification-link">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                  exercitationem expedita distinctio accusamus debitis sapiente!
-                </a>
-                <a href="#" class="notification-link">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                  exercitationem expedita distinctio accusamus debitis sapiente!
-                </a>
-                <a href="#" class="notification-link">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                  exercitationem expedita distinctio accusamus debitis sapiente!
-                </a>
-              </div>
-            </ul>
-          </div>
-          <div class="lang">
-            <span class="lang_trigger_icon">
-              <img src="assets/icons/eg_flag.png" alt="arabic" title="arabic" />
-            </span>
-          </div>
-          <div class="nav-links">
-            <a
-              href="pages/addAd.html"
-              class="button-border button-secondary-blue"
-            >
-              <i class="fas fa-plus"></i>
-              <span>Add Ad</span>
+    <header>
+      <div class="container">
+        <div class="header__content">
+          <div class="left-header">
+            <a href="index.html" class="logo">
+              <img src="assets/icons/logo.png" alt="Logo" />
             </a>
           </div>
-          <div class="user-settings">
-            <div class="user-icon">
-              <img
-                src="assets/icons/user-pic1.jpg"
-                alt="user picture"
-                title="user picture"
-              />
-            </div>
+          <div class="right-header">
+            <div class="notifications-settings">
+              <div class="notification-icon">
+                <span class="badge bg-danger">23</span>
+                <i class="fas fa-bell fa-lg"></i>
+              </div>
 
-            <ul class="user-settings-list">
-              <a href="pages/profile.html" class="user-settings-link">
-                <div class="user-icon">
-                  <img
-                    src="assets/icons/user-pic1.jpg"
-                    alt="user picture"
-                    title="user picture"
-                  />
+              <ul class="notifications-settings-list">
+                <h6 class="notifications-head">Notifications</h6>
+                <div class="notifications">
+                  <a href="#" class="notification-link">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                    exercitationem expedita distinctio accusamus debitis
+                    sapiente!
+                  </a>
+                  <a href="#" class="notification-link">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                    exercitationem expedita distinctio accusamus debitis
+                    sapiente!
+                  </a>
+                  <a href="#" class="notification-link">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                    exercitationem expedita distinctio accusamus debitis
+                    sapiente!
+                  </a>
+                  <a href="#" class="notification-link">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                    exercitationem expedita distinctio accusamus debitis
+                    sapiente!
+                  </a>
                 </div>
-                Profile
-              </a>
-              <a href="pages/myAds.html" class="user-settings-link">
-                <i class="fas fa-ad"></i>
-                My Ads
-              </a>
-              <a href="pages/messages.html" class="user-settings-link">
-                <i class="fas fa-envelope"></i>
-                Messages
-              </a>
-              <a href="pages/addAd.html" class="user-settings-link">
+              </ul>
+            </div>
+            <div class="lang">
+              <span class="lang_trigger_icon">
+                <img
+                  src="assets/icons/eg_flag.png"
+                  alt="arabic"
+                  title="arabic"
+                />
+              </span>
+            </div>
+            <div class="nav-links">
+              <a
+                href="pages/addAd.html"
+                class="button-border button-secondary-blue"
+              >
                 <i class="fas fa-plus"></i>
-                Add ad
+                <span>Add Ad</span>
               </a>
-              <a href="pages/favourite.html" class="user-settings-link">
-                <i class="fas fa-star"></i>
-                Favourite
-              </a>
-              <a href="pages/settings.html" class="user-settings-link">
-                <i class="fas fa-cog"></i>
-                Settings
-              </a>
-              <a href="pages/logout.html" class="user-settings-link">
-                <i class="fas fa-sign-out-alt"></i>
-                Logout
-              </a>
-            </ul>
+            </div>
+            <div class="user-settings">
+              <div class="user-icon">
+                <img
+                  src="assets/icons/user-pic1.jpg"
+                  alt="user picture"
+                  title="user picture"
+                />
+              </div>
+
+              <ul class="user-settings-list">
+                <a href="pages/profile.html" class="user-settings-link">
+                  <div class="user-icon">
+                    <img
+                      src="assets/icons/user-pic1.jpg"
+                      alt="user picture"
+                      title="user picture"
+                    />
+                  </div>
+                  Profile
+                </a>
+                <a href="pages/myAds.html" class="user-settings-link">
+                  <i class="fas fa-ad"></i>
+                  My Ads
+                </a>
+                <a href="pages/messages.html" class="user-settings-link">
+                  <i class="fas fa-envelope"></i>
+                  Messages
+                </a>
+                <a href="pages/addAd.html" class="user-settings-link">
+                  <i class="fas fa-plus"></i>
+                  Add ad
+                </a>
+                <a href="pages/favourite.html" class="user-settings-link">
+                  <i class="fas fa-star"></i>
+                  Favourite
+                </a>
+                <a href="pages/settings.html" class="user-settings-link">
+                  <i class="fas fa-cog"></i>
+                  Settings
+                </a>
+                <a href="pages/logout.html" class="user-settings-link">
+                  <i class="fas fa-sign-out-alt"></i>
+                  Logout
+                </a>
+              </ul>
+            </div>
           </div>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
     <!-- END HEADER SECTION -->
 
     <!-- START MAIN SECTION -->
-    <main></main>
+    <main>
+      <!-- Swiper -->
+      <div class="swiper home__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/images/home_slider1.jpeg" alt="home slider" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/home_slider2.jpg" alt="home slider" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/home_slider1.jpeg" alt="home slider" />
+          </div>
+        </div>
+        <div class="swiper-button-next home__slider-next"></div>
+        <div class="swiper-button-prev home__slider-prev"></div>
+        <div class="home__slider-pagination"></div>
+      </div>
+    </main>
     <!-- END MAIN SECTION -->
 
     <!-- START FOOTER SECTION -->
     <footer></footer>
     <!-- END FOOTER SECTION -->
 
+    <script src="./assets/plugins/js/swiper-bundle.min.js"></script>
     <script src="assets/plugins/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>

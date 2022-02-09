@@ -10,7 +10,7 @@
 
 .addDetails-img {
   text-align: center;
-  border: 2px solid #eef0fd;
+  border: 2px solid #f1f1f1;
   border-radius: 6px;
 }
 
@@ -20,7 +20,7 @@
   }
 }
 .desc-of-items {
-  background-color: #eef0fd;
+  background-color: #f1f1f1;
   padding: 10px 12px;
   font-size: 22px;
   object-fit: contain;
@@ -41,14 +41,14 @@
 .triangle {
   width: 250px;
   display: block;
-  background-color: #eef0fd;
+  background-color: #f1f1f1;
   padding: 7px 15px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
 .product-info {
-  border: 1px solid #eef0fd;
+  border: 1px solid #f1f1f1;
   margin-top: 5px;
   border-radius: 6px;
 }
@@ -66,7 +66,7 @@
   font-size: 15px;
   line-height: 1.4;
   padding: 15px 12px;
-  border: 1px solid #eef0fd;
+  border: 1px solid #f1f1f1;
   margin-top: 9px;
   border-radius: 6px;
   border-radius: 6px;
@@ -79,7 +79,7 @@
   align-items: center;
   margin: 0 4px;
   padding: 12px 15px;
-  background-color: #5a75e6;
+  background-color: #ffa26c;
   color: white;
   font-weight: bold;
   width: 250px;
@@ -118,14 +118,14 @@
   padding-top: 25px;
   font-size: 33px;
   font-weight: bold;
-  color: #5a75e6;
+  color: #ffa26c;
 }
 
 .related-card-1 {
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.1);
   position: relative;
   border-radius: 4px;
-  border: 1px solid #eef0fd;
+  border: 1px solid #f1f1f1;
   transition: scale 0.4s ease-in-out;
   transition: scale 0.4s ease;
   border-radius: 6px;
@@ -140,7 +140,7 @@
 }
 
 .related-card-1:hover .card {
-  border-bottom: 2px solid #2d42b5;
+  border-bottom: 2px solid #f27933;
   transition: border 0.2s ease-in-out;
 }
 
@@ -150,15 +150,15 @@
   max-width: 400px;
   height: auto;
   margin-top: 10px;
-  background-color: #eef0fd;
-  color: #5a75e6;
+  background-color: #f1f1f1;
+  color: #ffa26c;
 }
 .important-tips h3 {
   font-size: 17px;
-  color: #5a75e6 !important;
+  color: #ffa26c !important;
 }
 .important-tips .another-product_title {
-  color: #5a75e6;
+  color: #ffa26c;
   font-size: 25px;
   margin-top: 15px;
 }

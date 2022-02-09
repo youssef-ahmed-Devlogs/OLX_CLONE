@@ -10,48 +10,95 @@
   }
 }
 
+@media (max-width: 1199px) {
+  .swiper-button-next {
+    right: 10px;
+  }
+
+  .swiper-button-prev {
+    left: 10px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 50px;
+  }
+
+  .home__slider-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    .right-header {
+      .notifications-settings {
+        .notifications-settings-list {
+          top: 80px;
+          width: 300px;
+          right: 50%;
+          transform: translateX(50%);
+        }
+      }
+    }
+  }
+
+  .home__slider-pagination .swiper-pagination-bullet,
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
 @media (max-width: 500px) {
-  $head-1: 31px;
-  $head-2: 25px;
-  $head-3: 18px;
-  $head-4: 13px;
+  header .left-header .logo img {
+    width: 50px;
+  }
+
+  header .right-header .user-settings .user-icon img {
+    width: 45px;
+    height: 45px;
+  }
 
   .button {
     padding: 4px 7px;
-    font-size: $head-4;
+    font-size: 13px;
   }
 
   .nav-links {
     display: none;
   }
-}
 
-// START HEADER SECTION
-
-@media (max-width: 767px) {
-  header {
-    position: relative;
-    .right-header {
-      .notifications-settings {
-        position: initial;
-        .notifications-settings-list {
-          top: 93px;
-          width: 250px;
-        }
-      }
+  .notifications-settings-list {
+    .notifications {
+      height: 200px !important;
     }
+  }
+
+  .notifications-head {
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+
+  .notification-link,
+  .user-settings-link {
+    font-size: 12px !important;
+    margin-bottom: 3px;
+  }
+
+  .user-settings-link i {
+    font-size: 15px !important;
   }
 }
 
 @media (max-width: 380px) {
-  $head-1: 31px;
-  $head-2: 25px;
-  $head-3: 18px;
-  $head-4: 13px;
-
   header {
     height: 60px;
-    margin-top: 10px;
+
+    .header__content {
+      height: 60px;
+    }
 
     .left-header {
       gap: 0 10px;
@@ -91,7 +138,7 @@
             padding: 3px;
             gap: 5px;
             transition: $transition;
-            font-size: $head-4;
+            font-size: 13px;
 
             &:not(:last-child) {
               margin-bottom: 5px;
@@ -101,7 +148,7 @@
             i {
               width: 35px;
               height: 35px;
-              font-size: $head-3;
+              font-size: 15px;
             }
           }
         }
@@ -111,9 +158,13 @@
         position: initial;
         .notifications-settings-list {
           top: 70px;
+          right: 20px;
         }
       }
     }
   }
+
+  .home__slider img {
+    height: calc(100vh - 60px);
+  }
 }
-// END HEADER SECTION

@@ -6,7 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: $dark-blue;
+  color: $black;
 }
 
 // Generals
@@ -25,7 +25,7 @@ ul {
   display: inline-block;
   padding: 8px 10px;
   border-radius: $border-radius-6;
-  font-size: $head-4;
+  font-size: 15px;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -45,19 +45,19 @@ ul {
 .button-primary-blue {
   @extend .button;
   color: $white;
-  background-color: $primary-blue;
-  box-shadow: -1px 4px 9px 0px rgba($primary-blue, $alpha: 0.2);
+  background-color: $primary-orange;
+  box-shadow: -1px 4px 9px 0px rgba($primary-orange, $alpha: 0.2);
 }
 
 .button-secondary-blue {
   @extend .button;
   color: $white;
-  background-color: $secondary-blue;
-  box-shadow: -1px 4px 9px 0px rgba($secondary-blue, $alpha: 0.2);
+  background-color: $secondary-orange;
+  box-shadow: -1px 4px 9px 0px rgba($secondary-orange, $alpha: 0.2);
 
   &.button-border {
-    color: $secondary-blue;
-    border: 1px solid $secondary-blue;
+    color: $secondary-orange;
+    border: 1px solid $secondary-orange;
   }
 }
 
@@ -72,9 +72,48 @@ ul {
   background: rgba($danger, $alpha: 0.1);
 }
 
-// HEAD
-// .head {
-//   font-weight: bold;
-// }
+// Home slider
+.home__slider {
+  width: 100%;
+}
 
-// .head-
+.home__slider .swiper-slide {
+}
+
+.home__slider img {
+  width: 100%;
+  height: calc(100vh - 80px);
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: $primary-orange;
+}
+
+.swiper-button-next {
+  right: 40px;
+}
+
+.swiper-button-prev {
+  left: 40px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 70px;
+}
+
+.home__slider-pagination {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.home__slider-pagination .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: $primary-orange;
+}
