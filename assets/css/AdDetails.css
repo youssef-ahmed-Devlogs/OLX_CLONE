@@ -1,6 +1,6 @@
 .model-prop {
   font-size: 25px;
-  color: #363c60;
+  color: #222;
 }
 
 .main-img {
@@ -206,7 +206,7 @@
   }
 }
 .form-content {
-  background-color: #f0f0f0;
+  background-color: #f1f1f1;
   padding: 20px 30px;
 }
 
