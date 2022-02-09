@@ -201,7 +201,9 @@ h2.title_related {
 
 .form-content {
   background-color: $light;
-  padding: 20px 30px;
+  padding: 30px 20px;
+  border: 1px solid rgb(202, 198, 198);
+  border-radius: 4px;
 }
 
 .form-content form {
@@ -213,7 +215,7 @@ h2.title_related {
     border-radius: 4px;
     outline: 0;
     margin-bottom: 20px;
-    border: 1px solid rgb(146, 146, 146);
+    border: 2px solid rgb(146, 146, 146);
   }
 
   textarea {
