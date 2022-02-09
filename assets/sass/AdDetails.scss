@@ -80,20 +80,16 @@
 .calling {
   display: flex;
   align-items: center;
-  margin: 0 4px;
   padding: 12px 15px;
   background-color: $secondary-orange;
   color: white;
   font-weight: bold;
-  width: 250px;
 
   .text {
     padding-left: 4px;
   }
 }
-.calling {
-  margin-top: 4px;
-}
+
 .another-addOfUser {
   padding-top: 10px;
 }
@@ -142,9 +138,8 @@
 
 .important-tips {
   padding: 25px 7px;
-  width: 250px;
   max-width: 400px;
-  height: auto;
+
   margin-top: 10px;
   background-color: $light;
   color: $secondary-orange;

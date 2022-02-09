@@ -40,7 +40,6 @@
 }
 
 .triangle {
-  width: 250px;
   display: block;
   background-color: #f1f1f1;
   padding: 7px 15px;
@@ -78,20 +77,14 @@
 .calling {
   display: flex;
   align-items: center;
-  margin: 0 4px;
   padding: 12px 15px;
   background-color: #ffa26c;
   color: white;
   font-weight: bold;
-  width: 250px;
 }
 .send-message .text,
 .calling .text {
   padding-left: 4px;
-}
-
-.calling {
-  margin-top: 4px;
 }
 
 .another-addOfUser {
@@ -147,9 +140,7 @@
 
 .important-tips {
   padding: 25px 7px;
-  width: 250px;
   max-width: 400px;
-  height: auto;
   margin-top: 10px;
   background-color: #f1f1f1;
   color: #ffa26c;
