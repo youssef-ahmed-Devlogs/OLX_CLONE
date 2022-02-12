@@ -207,7 +207,7 @@ h2.title_related {
   border-radius: 4px;
 }
 
-.form-content form input {
+.form-content form input.email__input {
   margin-top: 4px;
   display: block;
   width: 380px;
@@ -228,7 +228,21 @@ h2.title_related {
 .add_attachment {
   padding-top: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+}
+
+.btn__send {
+  margin-top: 6px;
+  background-color: #f27933;
+  display: block;
+  width: 100px;
+  height: 48px;
+  color: white;
+  padding: 4px;
+  font-size: 19px;
+  border-radius: 6px;
+  border: 0;
+  outline: none;
 }
 
 .product__desc .product_description {
@@ -242,4 +256,48 @@ h2.title_related {
   padding-top: 12px;
   color: #f27933;
   font-size: 27px;
+}
+
+.custom-file {
+  margin-top: 20px;
+  background-color: #f1f1f1;
+  width: 500px;
+  max-width: 100%;
+  height: 48px;
+  border: 1px solid #f27933;
+  position: relative;
+  border-radius: 6px;
+}
+
+.custom-file > span {
+  padding: 5px 0 0 10px;
+  height: 33px;
+  line-height: 33px;
+  display: block;
+  font-size: 19px;
+  color: black;
+}
+
+.custom-file input[type=file] {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.custom-file::after {
+  content: "upload";
+  background-color: #f27933;
+  width: 100px;
+  color: white;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 6px;
 }
