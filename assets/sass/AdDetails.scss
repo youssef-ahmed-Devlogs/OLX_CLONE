@@ -44,11 +44,12 @@
 }
 
 .triangle {
-  display: block;
+  gap: 5px;
+  display: flex;
   background-color: $light;
   padding: 7px 15px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 .product-info {
   border: 1px solid $light;
@@ -206,14 +207,14 @@ h2.title_related {
     border-radius: 4px;
     outline: 0;
     margin-bottom: 20px;
-    border: 2px solid rgb(146, 146, 146);
+    border: 2px solid $secondary-orange;
   }
 
   textarea {
     display: block;
     width: 100%;
     padding: 16px;
-    border: 1px solid rgb(146, 146, 146);
+    border: 1px solid $secondary-orange;
     outline: 0;
   }
 }

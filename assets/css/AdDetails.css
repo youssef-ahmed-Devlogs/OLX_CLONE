@@ -40,11 +40,12 @@
 }
 
 .triangle {
-  display: block;
+  gap: 5px;
+  display: flex;
   background-color: #f1f1f1;
   padding: 7px 15px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 .product-info {
@@ -215,13 +216,13 @@ h2.title_related {
   border-radius: 4px;
   outline: 0;
   margin-bottom: 20px;
-  border: 2px solid #929292;
+  border: 2px solid #ffa26c;
 }
 .form-content form textarea {
   display: block;
   width: 100%;
   padding: 16px;
-  border: 1px solid #929292;
+  border: 1px solid #ffa26c;
   outline: 0;
 }
 
