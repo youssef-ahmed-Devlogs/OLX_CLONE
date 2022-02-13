@@ -361,6 +361,9 @@ input[type="file"] {
 // START CATEGORIES SECTION
 
 .categories__section {
+  box-shadow: 0 0 6px rgb(0 0 0 / 10%);
+  padding: 10px;
+  border-radius: 5px;
   margin-bottom: 15px;
   .categories__list {
     a {
