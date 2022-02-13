@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/assets/plugins/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="../assets/plugins/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../assets/plugins/css/all.min.css" />
     <link rel="stylesheet" href="../assets/css/proflie.css" />
@@ -139,7 +140,7 @@
     <!-- START MAIN SECTION -->
     <main class="proflie-page">
       <!-- Start************************User-Information*************************** -->
-      <section class="User-Information">
+      <section class="User-Information p-5">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
@@ -149,10 +150,10 @@
                   alt="user picture"
                   title="updata user picture"
                 />
-              </div>
-              <!-- Up Data Img User Olx -->
-              <div class="updata-img-user">
-                <i class="fa fa-camera"></i>
+                <!-- Up Data Img User Olx -->
+                <div class="updata-img-user">
+                  <i class="fa fa-camera"></i>
+                </div>
               </div>
               <!-- User Caption => title  -->
               <div class="user-caption">
@@ -179,268 +180,216 @@
       </section>
       <!-- End************************User-Information****************************** -->
       <!--? Start**********************User-Ads*************************************  -->
-      <section class="User-Ads p-5">
+      <div class="products__section">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="Ads">
-                <div class="tabing container">
-                  <h2>Ads</h2>
-                  <ul>
-                    <li class="active" data-tabs=".List">List</li>
-                    <li data-tabs=".Image">Image</li>
-                  </ul>
+          <div class="products__section-content">
+            
+            <ul class="tabing">
+              <li class="active" data-tabs=".Ads">Tab 1</li>
+              <li data-tabs=".Ads-User">tab2</li>
+              
+            </ul>
+            <div class="Products-tabing">
+              <div class="div Ads">
+              products 1
+              </div>
+              <div class="div Ads-User">
+              products 2
+              </div>
+              
+            </div>
+            <div class="products__content mt-3">
+              <h2 class="section__head">Latest Products</h2>
+  
+              <div class="swiper latest__products swiper__container">
+                <div class="swiper__navigation">
+                  <div class="latest__products-prev prev">
+                    <i class="fas fa-arrow-left"></i>
+                  </div>
+                  <div class="latest__products-next next">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
                 </div>
-                <div class="tabs container">
-                  <div class="div List">
-                    <div class="row row-cols-1">
-                      <div class="col col-lg-12 col-md-12 col-sm-12">
-                        <div class="title-table">
-                          <div class="link">
-                            <div class="title-link">Title</div>
-                            <div class="price">100Ec</div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product card__product">
+                      <span class="add__to__fav">
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <img
+                        class="product__img"
+                        src="/assets/images/1.png"
+                        alt="product"
+                      />
+                      <a href="./pages/AdDetails.html" class="product__info">
+                        <div class="main__info">
+                          <div class="title__category">
+                            <span class="title">Airbods pro</span>
+                            <span class="category">Tech</span>
                           </div>
-                          <div class="branch mb-2 text-end">
-                            كمبيوتر و إكسسوارات » كمبيوتر
-                          </div>
-                          <div class="img-table">
-                            <img src="/assets/images/2.jpg" alt="" />
-                          </div>
-                          <hr />
-                          <div class="Data">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Facere aspernatur, rem, tempora asperiores
-                            quaerat rerum alias vitae sapiente sequi debitis
-                            unde vero corrupti magnam repellat saepe odit
-                            possimus dignissimos eos?
+                          <div class="price">
+                            <span class="number">3500</span>
+                            <span class="currency">L.E</span>
                           </div>
                         </div>
-                      </div>
-                      <div class="col col-lg-12 col-md-12 col-sm-12">
-                        <div class="title-table">
-                          <div class="link">
-                            <div class="title-link">Title</div>
-                            <div class="price">100Ec</div>
-                          </div>
-                          <div class="branch mb-2 text-end">
-                            كمبيوتر و إكسسوارات » كمبيوتر
-                          </div>
-                          <div class="img-table">
-                            <img src="/assets/images/2.jpg" alt="" />
-                          </div>
-                          <hr />
-                          <div class="Data">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Facere aspernatur, rem, tempora asperiores
-                            quaerat rerum alias vitae sapiente sequi debitis
-                            unde vero corrupti magnam repellat saepe odit
-                            possimus dignissimos eos?
-                          </div>
+                        <div class="date__location">
+                          <span class="date">2/9/2022</span>
+                          <span class="location">Cairo</span>
                         </div>
-                      </div>
-                      <div class="col col-lg-12 col-md-12 col-sm-12">
-                        <div class="title-table">
-                          <div class="link">
-                            <div class="title-link">Title</div>
-                            <div class="price">100Ec</div>
-                          </div>
-                          <div class="branch mb-2 text-end">
-                            كمبيوتر و إكسسوارات » كمبيوتر
-                          </div>
-                          <div class="img-table">
-                            <img src="/assets/images/2.jpg" alt="" />
-                          </div>
-                          <hr />
-                          <div class="Data">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Facere aspernatur, rem, tempora asperiores
-                            quaerat rerum alias vitae sapiente sequi debitis
-                            unde vero corrupti magnam repellat saepe odit
-                            possimus dignissimos eos?
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col col-lg-12 col-md-12 col-sm-12">
-                        <div class="title-table">
-                          <div class="link">
-                            <div class="title-link">Title</div>
-                            <div class="price">100Ec</div>
-                          </div>
-                          <div class="branch mb-2 text-end">
-                            كمبيوتر و إكسسوارات » كمبيوتر
-                          </div>
-                          <div class="img-table">
-                            <img src="/assets/images/2.jpg" alt="" />
-                          </div>
-                          <hr />
-                          <div class="Data">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Facere aspernatur, rem, tempora asperiores
-                            quaerat rerum alias vitae sapiente sequi debitis
-                            unde vero corrupti magnam repellat saepe odit
-                            possimus dignissimos eos?
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col col-lg-12 col-md-12 col-sm-12">
-                        <div class="title-table">
-                          <div class="link">
-                            <div class="title-link">Title</div>
-                            <div class="price">100Ec</div>
-                          </div>
-                          <div class="branch mb-2 text-end">
-                            كمبيوتر و إكسسوارات » كمبيوتر
-                          </div>
-                          <div class="img-table">
-                            <img src="/assets/images/2.jpg" alt="" />
-                          </div>
-                          <hr />
-                          <div class="Data">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Facere aspernatur, rem, tempora asperiores
-                            quaerat rerum alias vitae sapiente sequi debitis
-                            unde vero corrupti magnam repellat saepe odit
-                            possimus dignissimos eos?
-                          </div>
-                        </div>
-                      </div>
+                      </a>
                     </div>
                   </div>
-                  <div class="div Image">
-                    <div class="row row-cols-1">
-                      <div class="col col-lg-4 col-md-6 col-sm-12">
-                        <div class="title-table">
-                          <div class="link">
-                            <div class="title-link">Title</div>
-                            <div class="price">100Ec</div>
+                  <div class="swiper-slide">
+                    <div class="product card__product">
+                      <span class="add__to__fav active">
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <img
+                        class="product__img"
+                        src="/assets/images/3.jpg"
+                        alt="product"
+                      />
+                      <a href="./pages/AdDetails.html" class="product__info">
+                        <div class="main__info">
+                          <div class="title__category">
+                            <span class="title">Black Jacket Large</span>
+                            <span class="category">Men clothes</span>
                           </div>
-                          <div class="branch mb-2 text-end">
-                            كمبيوتر و إكسسوارات » كمبيوتر
-                          </div>
-                          <div class="img-table">
-                            <img src="/assets/images/2.jpg" alt="" />
-                          </div>
-                          <hr />
-                          <div class="Data">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Facere aspernatur, rem, tempora asperiores
-                            quaerat rerum alias vitae sapiente sequi debitis
-                            unde vero corrupti magnam repellat saepe odit
-                            possimus dignissimos eos?
+                          <div class="price">
+                            <span class="number">500</span>
+                            <span class="currency">L.E</span>
                           </div>
                         </div>
-                      </div>
-                      <div class="col col-lg-4 col-md-6 col-sm-12">
-                        <div class="title-table">
-                          <div class="link">
-                            <div class="title-link">Title</div>
-                            <div class="price">100Ec</div>
+                        <div class="date__location">
+                          <span class="date">2/9/2022</span>
+                          <span class="location">Cairo</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product card__product">
+                      <span class="add__to__fav">
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <img
+                        class="product__img"
+                        src="/assets/images/2.jpg"
+                        alt="product"
+                      />
+                      <a href="./pages/AdDetails.html" class="product__info">
+                        <div class="main__info">
+                          <div class="title__category">
+                            <span class="title">Gaming PC</span>
+                            <span class="category">Tech</span>
                           </div>
-                          <div class="branch mb-2 text-end">
-                            كمبيوتر و إكسسوارات » كمبيوتر
-                          </div>
-                          <div class="img-table">
-                            <img src="/assets/images/2.jpg" alt="" />
-                          </div>
-                          <hr />
-                          <div class="Data">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Facere aspernatur, rem, tempora asperiores
-                            quaerat rerum alias vitae sapiente sequi debitis
-                            unde vero corrupti magnam repellat saepe odit
-                            possimus dignissimos eos?
+                          <div class="price">
+                            <span class="number">2500</span>
+                            <span class="currency">L.E</span>
                           </div>
                         </div>
-                      </div>
-                      <div class="col col-lg-4 col-md-6 col-sm-12">
-                        <div class="title-table">
-                          <div class="link">
-                            <div class="title-link">Title</div>
-                            <div class="price">100Ec</div>
+                        <div class="date__location">
+                          <span class="date">4/9/2022</span>
+                          <span class="location">Giza</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product card__product">
+                      <span class="add__to__fav">
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <img
+                        class="product__img"
+                        src="/assets/images/1.png"
+                        alt="product"
+                      />
+                      <a href="./pages/AdDetails.html" class="product__info">
+                        <div class="main__info">
+                          <div class="title__category">
+                            <span class="title">Airbods pro</span>
+                            <span class="category">Tech</span>
                           </div>
-                          <div class="branch mb-2 text-end">
-                            كمبيوتر و إكسسوارات » كمبيوتر
-                          </div>
-                          <div class="img-table">
-                            <img src="/assets/images/2.jpg" alt="" />
-                          </div>
-                          <hr />
-                          <div class="Data">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Facere aspernatur, rem, tempora asperiores
-                            quaerat rerum alias vitae sapiente sequi debitis
-                            unde vero corrupti magnam repellat saepe odit
-                            possimus dignissimos eos?
+                          <div class="price">
+                            <span class="number">3500</span>
+                            <span class="currency">L.E</span>
                           </div>
                         </div>
-                      </div>
-                      <div class="col col-lg-4 col-md-6 col-sm-12">
-                        <div class="title-table">
-                          <div class="link">
-                            <div class="title-link">Title</div>
-                            <div class="price">100Ec</div>
+                        <div class="date__location">
+                          <span class="date">2/9/2022</span>
+                          <span class="location">Cairo</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product card__product">
+                      <span class="add__to__fav active">
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <img
+                        class="product__img"
+                        src="/assets/images/3.jpg"
+                        alt="product"
+                      />
+                      <a href="./pages/AdDetails.html" class="product__info">
+                        <div class="main__info">
+                          <div class="title__category">
+                            <span class="title">Black Jacket Large</span>
+                            <span class="category">Men clothes</span>
                           </div>
-                          <div class="branch mb-2 text-end">
-                            كمبيوتر و إكسسوارات » كمبيوتر
-                          </div>
-                          <div class="img-table">
-                            <img src="/assets/images/2.jpg" alt="" />
-                          </div>
-                          <hr />
-                          <div class="Data">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Facere aspernatur, rem, tempora asperiores
-                            quaerat rerum alias vitae sapiente sequi debitis
-                            unde vero corrupti magnam repellat saepe odit
-                            possimus dignissimos eos?
+                          <div class="price">
+                            <span class="number">500</span>
+                            <span class="currency">L.E</span>
                           </div>
                         </div>
-                      </div>
-                      <div class="col col-lg-4 col-md-6 col-sm-12">
-                        <div class="title-table">
-                          <div class="link">
-                            <div class="title-link">Title</div>
-                            <div class="price">100Ec</div>
+                        <div class="date__location">
+                          <span class="date">2/9/2022</span>
+                          <span class="location">Cairo</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product card__product">
+                      <span class="add__to__fav">
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <img
+                        class="product__img"
+                        src="/assets/images/2.jpg"
+                        alt="product"
+                      />
+                      <a href="./pages/AdDetails.html" class="product__info">
+                        <div class="main__info">
+                          <div class="title__category">
+                            <span class="title">Gaming PC</span>
+                            <span class="category">Tech</span>
                           </div>
-                          <div class="branch mb-2 text-end">
-                            كمبيوتر و إكسسوارات » كمبيوتر
-                          </div>
-                          <div class="img-table">
-                            <img src="/assets/images/2.jpg" alt="" />
-                          </div>
-                          <hr />
-                          <div class="Data">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Facere aspernatur, rem, tempora asperiores
-                            quaerat rerum alias vitae sapiente sequi debitis
-                            unde vero corrupti magnam repellat saepe odit
-                            possimus dignissimos eos?
+                          <div class="price">
+                            <span class="number">2500</span>
+                            <span class="currency">L.E</span>
                           </div>
                         </div>
-                      </div>
+                        <div class="date__location">
+                          <span class="date">4/9/2022</span>
+                          <span class="location">Giza</span>
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
+  
+                <div class="latest__products-pagination swiper__pagination"></div>
               </div>
             </div>
           </div>
         </div>
-        <!--  -->
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4"></div>
-            <div class="col-lg-4"></div>
-            <div class="col-lg-4"></div>
-          </div>
-        </div>
-      </section>
+      </div>
       <!--!  End************************User-Ads*************************************  -->
       <!--? **************************** Start User ads log **************************** -->
-      <section class="User-ads-log">
-        <div class="container">
-          <h2>User Ads Log</h2>
-        </div>
-      </section>
+     
       <!--TODO ***********************End User ads log********************************** -->
     </main>
     <!-- END MAIN SECTION -->
@@ -449,6 +398,7 @@
     <footer></footer>
     <!-- END FOOTER SECTION -->
 
+    <script src="/assets/plugins/js/swiper-bundle.min.js"></script>
     <script src="/assets/plugins/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/proflie.js"></script>

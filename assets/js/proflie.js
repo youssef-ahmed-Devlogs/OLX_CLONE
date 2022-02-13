@@ -1,9 +1,9 @@
 // Fun Variables Tab Ads
 tabLink = ()=>{
 // variables tab Ads
-let li = document.querySelectorAll(".User-Ads li");
+let li = document.querySelectorAll(".tabing li");
 let liArray = Array.from(li);
-let tab = document.querySelectorAll(".tabs > .div");
+let tab = document.querySelectorAll(".Products-tabing > .div");
 let tabArray = Array.from(tab);
 // fun tab Ads
 
