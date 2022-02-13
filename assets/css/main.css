@@ -67,12 +67,22 @@ ul {
 }
 
 .ads__banner {
-  padding: 10px;
   width: 100%;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+.ads__banner img {
+  object-fit: cover;
+}
+.ads__banner.banner__h400 {
+  height: 400px;
+}
+.ads__banner.banner__h400 img {
+  width: 100%;
+  height: 400px;
 }
 
 .section__head, .section__head-sm {
@@ -335,6 +345,13 @@ input[type=file] {
   }
 }
 @media (max-width: 1199px) {
+  .home__content {
+    flex-direction: column-reverse;
+  }
+  .home__content .categories__section {
+    margin-top: 20px;
+  }
+
   .ads__banner img {
     width: 100%;
   }
@@ -378,6 +395,11 @@ input[type=file] {
 
   .section__head, .section__head-sm {
     font-size: 20px;
+  }
+
+  .section__head-sm {
+    font-size: 16px;
+    margin-bottom: 5px;
   }
 
   .py-5 {
@@ -471,6 +493,10 @@ select {
     font-size: 8px;
   }
   .card__product .product__info .date__location {
+    font-size: 12px;
+  }
+
+  .categories__section .categories__list a {
     font-size: 12px;
   }
 }

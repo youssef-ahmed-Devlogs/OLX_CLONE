@@ -79,12 +79,25 @@ ul {
 }
 
 .ads__banner {
-  padding: 10px;
   width: 100%;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+  }
+
+  &.banner__h400 {
+    height: 400px;
+
+    img {
+      width: 100%;
+      height: 400px;
+    }
+  }
 }
 
 // HEAD

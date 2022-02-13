@@ -2,16 +2,24 @@ footer {
   background-color: #222;
   color: #ffffff;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
+  clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
+}
+footer .logo img {
+  width: 80px;
+  text-align: center;
 }
 footer .top__links {
-  padding: 20px 10px;
+  padding: 120px 10px 0;
 }
 footer .top__links .links ul a {
   display: block;
   color: #ffffff;
   text-align: left;
   font-size: 15px;
+}
+footer .top__links .links .store__icon {
+  display: block;
 }
 footer .top__links .links .store__icon img {
   max-width: 150px;
