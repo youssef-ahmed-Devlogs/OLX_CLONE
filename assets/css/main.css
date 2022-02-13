@@ -8,6 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #222;
   margin-top: 80px;
+  text-transform: capitalize;
 }
 
 a {

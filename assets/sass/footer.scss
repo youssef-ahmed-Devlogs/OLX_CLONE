@@ -1,9 +1,38 @@
 @import "./variables";
 
 footer {
-  background-color: $secondary-orange;
+  background-color: $black;
   color: $white;
   text-align: center;
-  padding: 10px;
   margin-top: 20px;
+
+  .top__links {
+    padding: 20px 10px;
+    .links {
+      ul {
+        a {
+          display: block;
+          color: $white;
+          text-align: left;
+          font-size: 15px;
+        }
+      }
+
+      .store__icon {
+        img {
+          max-width: 150px;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  .bottom__bg {
+    img {
+      width: 100%;
+    }
+  }
 }

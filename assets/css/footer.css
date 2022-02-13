@@ -1,7 +1,24 @@
 footer {
-  background-color: #ffa26c;
+  background-color: #222;
   color: #ffffff;
   text-align: center;
-  padding: 10px;
   margin-top: 20px;
+}
+footer .top__links {
+  padding: 20px 10px;
+}
+footer .top__links .links ul a {
+  display: block;
+  color: #ffffff;
+  text-align: left;
+  font-size: 15px;
+}
+footer .top__links .links .store__icon img {
+  max-width: 150px;
+}
+footer .top__links .links .store__icon:not(:last-child) {
+  margin-bottom: 5px;
+}
+footer .bottom__bg img {
+  width: 100%;
 }
