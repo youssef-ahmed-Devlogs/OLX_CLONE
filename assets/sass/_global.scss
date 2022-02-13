@@ -34,6 +34,8 @@ ul {
   gap: 0 10px;
   width: max-content;
   transition: $transition;
+  cursor: pointer;
+
   &:hover {
     box-shadow: none;
     color: $white;
@@ -172,8 +174,14 @@ textarea {
   display: block;
   padding: 10px;
   background-color: rgba($secondary-orange, $alpha: 0.08);
-}
 
+  &::placeholder {
+    text-transform: capitalize;
+  }
+}
+input[type="file"] {
+  display: none;
+}
 // CARDS
 .card__product {
   position: relative;

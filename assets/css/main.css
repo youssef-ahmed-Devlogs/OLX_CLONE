@@ -32,6 +32,7 @@ ul {
   gap: 0 10px;
   width: max-content;
   transition: 0.4s ease-in-out;
+  cursor: pointer;
   border: none;
   outline: none;
 }
@@ -157,6 +158,15 @@ textarea {
   display: block;
   padding: 10px;
   background-color: rgba(255, 162, 108, 0.08);
+}
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  text-transform: capitalize;
+}
+
+input[type=file] {
+  display: none;
 }
 
 .card__product {

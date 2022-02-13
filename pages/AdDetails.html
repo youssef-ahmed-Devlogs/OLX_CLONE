@@ -156,7 +156,7 @@
             <div class="row">
               <div class="col-xl-9 col-12">
                 <div class="left-section">
-                  <div class="addDetails-img fancy-gallery mt-4">
+                  <div class="addDetails-img fancy-gallery">
                     <div>
                       <a
                         data-fancybox="gallery"
@@ -195,6 +195,12 @@
                           <i class="far fa-flag"></i>
                           <span> report</span>
                         </div>
+                      </div>
+                      <div class="col">
+                       <div class="add_to_favourit">
+                        <i class="fas fa-shopping-bag"></i>                 
+                        <span> Add To card</span>
+                       </div>
                       </div>
                     </div>
                   </div>
@@ -406,7 +412,7 @@
               <!-- rignt section -->
               <div class="col-xl-3 col-12">
                 <div class="right-section">
-                  <h2 class="triangle"> <span>$</span> 40</h2>
+                  <span class="triangle text-center d-block mb-2">40<span class="dollar__sign">L.E</span></span>
                   <a href="#" class="button button-secondary-blue mb-1 w-100">
                     <i class="far fa-envelope-open"></i>
                     <span>send message</span>
@@ -418,28 +424,28 @@
                   </button>
                   <!-- any thing -->
                   <div class="important-tips">
-                    <h3 class="section__head mt-4">important Tips</h3>
-                    <ul class="unstyled">
-                      <li class="d-flex">
-                        <div>1</div>
-                        <div>Lorem ipsum dolor sit amet.</div>
+                    <h3 class="section__head-sm">important Tips</h3>
+                    <ol>
+                      <li>
+                      
+                        Lorem ipsum dolor sit amet.
                       </li>
                       <li>
-                        <div>2</div>
-                        <div>Lorem ipsum dolor sit amet.</div>
+                       
+                        Lorem ipsum dolor sit amet.
                       </li>
                       <li>
-                        <div>3</div>
-                        <div>Lorem ipsum dolor sit amet.</div>
+                    
+                        Lorem ipsum dolor sit amet.
                       </li>
                       <li>
-                        <div>4</div>
-                        <div>
-                          Lorem ipsum dolor sit amet Lorem ipsum dolor sit
+                        
+                        
+                      Lorem ipsum dolor sit amet Lorem ipsum dolor sit
                           amet..
-                        </div>
+                        
                       </li>
-                    </ul>
+                    </ol>
                   </div>
                 </div>
               </div>
@@ -615,22 +621,20 @@
               <div class="form-content">
                 <div class="phone">
                   <!-- icom -->
-                  <a href="">011 189 254</a>
-                  <a href="">show phone</a>
+              
                   <!-- form -->
                 </div>
                 <form>
-                  <input class="email__input" type="email" placeholder="email" />
-                  <textarea
+                  <input class="w-100 mb-2" type="email" placeholder="email" />
+                  <textarea class="w-100"
                     name="message"
                     id="textarea"
                     placeholder="message"
                   ></textarea>
                <div class="custom-file">
-                 <span>
-                   upload file
-                 </span>
-                <input type="file">
+                 <label class="button-secondary-blue" for="uploadAttachment"> <span><i class="fas fa-paper-plane"></i></span> upload Attachment</label>
+               
+                <input type="file" id="uploadAttachment">
                </div>
                 </form>
                 <div class="add_attachment">
@@ -639,7 +643,7 @@
                   </div> -->
                 
                   <div>
-                    <button class="btn__send">send</button>
+                    <button class="button-secondary-blue">send</button>
                   </div>
                 </div>
               </div>

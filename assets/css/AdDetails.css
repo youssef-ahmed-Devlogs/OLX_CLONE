@@ -21,31 +21,77 @@
   }
 }
 .desc-of-items {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   padding: 10px 12px;
   font-size: 22px;
   object-fit: contain;
-  margin-top: 4px;
+  margin-top: 9px;
   border-radius: 6px;
+  box-shadow: 0 0 6px 0 rgba(34, 34, 34, 0.2);
+  margin-bottom: 16px;
 }
 
+.left-star {
+  text-transform: capitalize;
+  transition: 0.4s ease-in-out;
+  border-radius: 5px;
+}
 .left-star span {
   display: block;
   cursor: pointer;
 }
+.left-star i {
+  cursor: pointer;
+}
 
+.right-report {
+  text-transform: capitalize;
+  transition: 0.4s ease-in-out;
+  border-radius: 5px;
+}
 .right-report span {
   display: block;
   cursor: pointer;
 }
+.right-report i {
+  cursor: pointer;
+}
+
+.desc-of-items .add_to_favourit {
+  text-transform: capitalize;
+  transition: 0.4s ease-in-out;
+  border-radius: 5px;
+}
+.desc-of-items .add_to_favourit span {
+  display: block;
+  cursor: pointer;
+}
+.desc-of-items .add_to_favourit i {
+  cursor: pointer;
+}
+
+.desc-of-items .left-star:hover {
+  background-color: rgba(255, 162, 108, 0.1);
+}
+
+.desc-of-items .right-report:hover {
+  background-color: rgba(255, 162, 108, 0.1);
+}
+
+.desc-of-items .add_to_favourit:hover {
+  background-color: rgba(255, 162, 108, 0.1);
+}
 
 .triangle {
-  gap: 5px;
-  display: flex;
-  background-color: #f1f1f1;
-  padding: 7px 15px;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
+  background-color: #ffffff;
+  padding: 7px 10px;
+  box-shadow: 0 0 6px 0 rgba(34, 34, 34, 0.1);
+  border-radius: 5px;
+  font-size: 30px;
+}
+.triangle .dollar__sign {
+  font-size: 20px;
+  color: #f27933;
 }
 
 .product-info {
@@ -105,7 +151,6 @@
 }
 
 .main-content a {
-  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -149,21 +194,15 @@ h2.title_related {
 }
 
 .important-tips {
-  padding: 25px 7px;
   max-width: 400px;
+  padding: 11px;
   margin-top: 10px;
-  background-color: #f1f1f1;
-  color: #ffa26c;
-}
-.important-tips ul {
-  list-style: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px 0 rgba(34, 34, 34, 0.1);
+  border-radius: 5px;
 }
 .important-tips li {
-  display: flex;
-  padding: 6px 0;
-}
-.important-tips li div {
-  margin-right: 3px;
+  font-size: 14px;
 }
 
 .swiper.last-one {
@@ -205,31 +244,11 @@ h2.title_related {
   }
 }
 .form-content {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   padding: 30px 20px;
-  border: 1px solid #cac6c6;
+  border: 1px solid #f1f1f1;
   border-radius: 4px;
-}
-
-.form-content form input.email__input {
-  margin-top: 4px;
-  display: block;
-  width: 380px;
-  padding: 5px 3px;
-  border-radius: 6px;
-  outline: 0;
-  margin-bottom: 20px;
-  border: 2px solid #f1f1f1;
-  box-shadow: 0 0 4px #f1f1f1;
-}
-.form-content form textarea {
-  display: block;
-  width: 100%;
-  padding: 16px;
-  border: 1px solid #ffffff;
-  outline: 0;
-  border-radius: 6px;
-  box-shadow: 0 0 4px #f1f1f1;
+  text-transform: capitalize;
 }
 
 .add_attachment {
@@ -263,48 +282,4 @@ h2.title_related {
   padding-top: 12px;
   color: #f27933;
   font-size: 27px;
-}
-
-.custom-file {
-  margin-top: 20px;
-  background-color: #f1f1f1;
-  width: 500px;
-  max-width: 100%;
-  height: 48px;
-  border: 1px solid #f27933;
-  position: relative;
-  border-radius: 6px;
-}
-
-.custom-file > span {
-  padding: 5px 0 0 10px;
-  height: 33px;
-  line-height: 33px;
-  display: block;
-  font-size: 19px;
-  color: black;
-}
-
-.custom-file input[type=file] {
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-
-.custom-file::after {
-  content: "upload";
-  background-color: #f27933;
-  width: 100px;
-  color: white;
-  height: 48px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  line-height: 48px;
-  text-align: center;
-  border-radius: 6px;
 }

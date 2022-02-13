@@ -22,34 +22,74 @@
 }
 
 .desc-of-items {
-  background-color: $light;
+  background-color: $white;
   padding: 10px 12px;
   font-size: 22px;
   object-fit: contain;
-  margin-top: 4px;
+  margin-top: 9px;
   border-radius: 6px;
+  box-shadow: $box-shadow-1 rgba($black, $alpha: 0.2);
+  margin-bottom: 16px;
 }
+
 .left-star {
+  text-transform: capitalize;
+  transition: $transition;
+  border-radius: 5px;
   span {
     display: block;
+    cursor: pointer;
+  }
+  i {
     cursor: pointer;
   }
 }
 
 .right-report {
+  text-transform: capitalize;
+  transition: $transition;
+  border-radius: 5px;
+
   span {
     display: block;
     cursor: pointer;
   }
+  i {
+    cursor: pointer;
+  }
 }
-
+.desc-of-items .add_to_favourit {
+  text-transform: capitalize;
+  transition: $transition;
+  border-radius: 5px;
+  span {
+    display: block;
+    cursor: pointer;
+  }
+  i {
+    cursor: pointer;
+  }
+}
+.desc-of-items .left-star:hover {
+  background-color: rgba($secondary-orange, $alpha: 0.1);
+}
+.desc-of-items .right-report:hover {
+  background-color: rgba($secondary-orange, $alpha: 0.1);
+}
+.desc-of-items .add_to_favourit:hover {
+  background-color: rgba($secondary-orange, $alpha: 0.1);
+}
 .triangle {
-  gap: 5px;
-  display: flex;
-  background-color: $light;
-  padding: 7px 15px;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
+  background-color: $white;
+  padding: 7px 10px;
+  box-shadow: $box-shadow-1 rgba($black, $alpha: 0.1);
+  border-radius: 5px;
+  font-size: 30px;
+
+  .dollar__sign {
+    font-size: 20px;
+    color: $primary-orange;
+  }
 }
 .product-info {
   border: 1px solid $light;
@@ -101,7 +141,6 @@
   }
 }
 .main-content a {
-  margin-top: 20px;
   margin-bottom: 10px;
 }
 .another-addOfUser {
@@ -140,22 +179,15 @@ h2.title_related {
 }
 
 .important-tips {
-  padding: 25px 7px;
   max-width: 400px;
-
+  padding: 11px;
   margin-top: 10px;
-  background-color: $light;
-  color: $secondary-orange;
+  background-color: $white;
+  box-shadow: $box-shadow-1 rgba($black, $alpha: 0.1);
+  border-radius: 5px;
 
-  ul {
-    list-style: none;
-  }
   li {
-    display: flex;
-    padding: 6px 0;
-  }
-  li div {
-    margin-right: 3px;
+    font-size: 14px;
   }
 }
 .swiper.last-one {
@@ -195,35 +227,13 @@ h2.title_related {
 }
 
 .form-content {
-  background-color: $light;
+  background-color: $white;
   padding: 30px 20px;
-  border: 1px solid rgb(202, 198, 198);
+  border: 1px solid $light;
   border-radius: 4px;
+  text-transform: capitalize;
 }
 
-.form-content form {
-  input.email__input {
-    margin-top: 4px;
-    display: block;
-    width: 380px;
-    padding: 5px 3px;
-    border-radius: 6px;
-    outline: 0;
-    margin-bottom: 20px;
-    border: 2px solid $light;
-    box-shadow: 0 0 4px $light;
-  }
-
-  textarea {
-    display: block;
-    width: 100%;
-    padding: 16px;
-    border: 1px solid $white;
-    outline: 0;
-    border-radius: 6px;
-    box-shadow: 0 0 4px $light;
-  }
-}
 .add_attachment {
   padding-top: 15px;
   display: flex;
@@ -254,43 +264,43 @@ h2.title_related {
   font-size: 27px;
 }
 
-.custom-file {
-  margin-top: 20px;
-  background-color: $light;
-  width: 500px;
-  max-width: 100%;
-  height: 48px;
-  border: 1px solid $primary-orange;
-  position: relative;
-  border-radius: 6px;
-}
-.custom-file > span {
-  padding: 5px 0 0 10px;
-  height: 33px;
-  line-height: 33px;
-  display: block;
-  font-size: 19px;
-  color: black;
-}
-.custom-file input[type="file"] {
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-.custom-file::after {
-  content: "upload";
-  background-color: $primary-orange;
-  width: 100px;
-  color: white;
-  height: 48px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  line-height: 48px;
-  text-align: center;
-  border-radius: 6px;
-}
+// .custom-file {
+//   margin-top: 20px;
+//   background-color: $light;
+//   width: 500px;
+//   max-width: 100%;
+//   height: 48px;
+//   border: 1px solid $primary-orange;
+//   position: relative;
+//   border-radius: 6px;
+// }
+// .custom-file > span {
+//   padding: 5px 0 0 10px;
+//   height: 33px;
+//   line-height: 33px;
+//   display: block;
+//   font-size: 19px;
+//   color: black;
+// }
+// .custom-file input[type="file"] {
+//   width: 100%;
+//   height: 100%;
+//   opacity: 0;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   z-index: 3;
+// }
+// .custom-file::after {
+//   content: "upload";
+//   background-color: $primary-orange;
+//   width: 100px;
+//   color: white;
+//   height: 48px;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   line-height: 48px;
+//   text-align: center;
+//   border-radius: 6px;
+// }
