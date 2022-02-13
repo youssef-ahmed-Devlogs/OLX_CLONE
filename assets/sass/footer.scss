@@ -1,9 +1,48 @@
 @import "./variables";
 
 footer {
-  background-color: $secondary-orange;
+  background-color: $black;
   color: $white;
   text-align: center;
-  padding: 10px;
-  margin-top: 20px;
+  margin-top: 40px;
+  clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
+
+  .logo {
+    img {
+      width: 80px;
+      text-align: center;
+    }
+  }
+
+  .top__links {
+    padding: 120px 10px 0;
+
+    .links {
+      ul {
+        a {
+          display: block;
+          color: $white;
+          text-align: left;
+          font-size: 15px;
+        }
+      }
+
+      .store__icon {
+        display: block;
+        img {
+          max-width: 150px;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  .bottom__bg {
+    img {
+      width: 100%;
+    }
+  }
 }

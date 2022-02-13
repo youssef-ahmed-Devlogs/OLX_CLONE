@@ -11,6 +11,13 @@
 }
 
 @media (max-width: 1199px) {
+  .home__content {
+    flex-direction: column-reverse;
+    .categories__section {
+      margin-top: 20px;
+    }
+  }
+
   .ads__banner {
     img {
       width: 100%;
@@ -64,6 +71,11 @@
 
   .section__head {
     font-size: 20px;
+  }
+
+  .section__head-sm {
+    font-size: 16px;
+    margin-bottom: 5px;
   }
 
   .py-5 {
@@ -169,6 +181,14 @@
       }
 
       .date__location {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .categories__section {
+    .categories__list {
+      a {
         font-size: 12px;
       }
     }

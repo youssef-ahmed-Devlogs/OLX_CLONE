@@ -8,6 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: $black;
   margin-top: 80px;
+  text-transform: capitalize;
 }
 
 // Generals
@@ -78,12 +79,25 @@ ul {
 }
 
 .ads__banner {
-  padding: 10px;
   width: 100%;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+  }
+
+  &.banner__h400 {
+    height: 400px;
+
+    img {
+      width: 100%;
+      height: 400px;
+    }
+  }
 }
 
 // HEAD
@@ -347,6 +361,9 @@ input[type="file"] {
 // START CATEGORIES SECTION
 
 .categories__section {
+  box-shadow: 0 0 6px rgb(0 0 0 / 10%);
+  padding: 10px;
+  border-radius: 5px;
   margin-bottom: 15px;
   .categories__list {
     a {
