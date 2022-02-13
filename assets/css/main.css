@@ -295,6 +295,24 @@ textarea {
 .products__section .filter__content select {
   flex: 1;
 }
+
+.categories__section {
+  margin-bottom: 15px;
+}
+.categories__section .categories__list a {
+  font-size: 14px;
+  color: #222;
+  display: block;
+  transform: 0.4s ease-in-out;
+  padding: 8px 5px;
+}
+.categories__section .categories__list a:hover {
+  background-color: rgba(255, 162, 108, 0.1);
+}
+.categories__section .categories__list a:not(:last-child) {
+  border-bottom: 1px solid #f1f1f1;
+}
+
 @media (min-width: 1800px) {
   .container,
 .container-lg,

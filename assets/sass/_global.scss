@@ -332,9 +332,31 @@ textarea {
       flex: 1;
     }
   }
-
-  .products__content {
-  }
 }
 
 // END PRODUCTS SECTION
+
+// START CATEGORIES SECTION
+
+.categories__section {
+  margin-bottom: 15px;
+  .categories__list {
+    a {
+      font-size: 14px;
+      color: $black;
+      display: block;
+      transform: $transition;
+      padding: 8px 5px;
+
+      &:hover {
+        background-color: rgba(255, 162, 108, 0.1);
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $light;
+      }
+    }
+  }
+}
+
+// END CATEGORIES SECTION
