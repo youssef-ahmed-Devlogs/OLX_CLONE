@@ -37,6 +37,8 @@ ul {
     box-shadow: none;
     color: $white;
   }
+  border: none;
+  outline: none;
 }
 
 .button-border {
@@ -90,6 +92,7 @@ ul {
   margin-bottom: 15px;
   width: max-content;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 .section__head::after {
