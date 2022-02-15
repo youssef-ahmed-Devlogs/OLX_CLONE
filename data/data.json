@@ -1,5 +1,93 @@
 [
   {
-    "test": "test"
+    "users": [
+      {
+        "id": 1,
+        "name": "Ahmed",
+        "profileImg": "user-pic1.jpg",
+        "joinDate": "2/15/2022",
+        "city": "Cairo",
+        "activeState": true,
+        "badges": []
+      },
+      {
+        "id": 2,
+        "name": "Abdo",
+        "profileImg": "user-pic2.jpg",
+        "joinDate": "7/9/2002",
+        "city": "Giza",
+        "activeState": false,
+        "badges": ["check"]
+      }
+    ],
+
+    "ads": [
+      {
+        "userID": 1,
+        "adID": 323,
+        "title": "Airbods Pro",
+        "price": 1400,
+        "categories": ["technology", "accessories"],
+        "addedDate": "4/10/2022",
+        "phone": "011 89 33 254",
+        "images": ["1.png", "4.jpg"],
+        "details": {
+          "model": "Airpods pro",
+          "addType": "For Sale",
+          "year": "2020",
+          "paymentCapital": "Cash",
+          "color": "white",
+          "description": "Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Maiores Ullam Pariatur Dicta Quam Nesciunt Quo Quae, Modi, Temporibus Fuga Soluta Exercitationem In Impedit Obcaecati Perspiciatis Inventore Id Sint Recusandae Necessitatibus."
+        },
+        "actions": {
+          "inCart": false,
+          "inFav": false
+        }
+      },
+      {
+        "userID": 1,
+        "adID": 42,
+        "title": "black Jacket",
+        "price": 700,
+        "categories": ["Fashion"],
+        "addedDate": "2/16/2021",
+        "phone": "010 378 87 845",
+        "images": ["3.png", "4.jpg"],
+        "details": {
+          "model": "Addids",
+          "addType": "For Sale",
+          "year": "2019",
+          "paymentCapital": "Cash",
+          "color": "Black",
+          "description": "Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Maiores Ullam Pariatur Dicta Quam Nesciunt Quo Quae, Modi, Temporibus Fuga Soluta Exercitationem In Impedit Obcaecati Perspiciatis Inventore Id Sint Recusandae Necessitatibus."
+        },
+        "actions": {
+          "inCart": false,
+          "inFav": false
+        }
+      },
+      {
+        "userID": 2,
+        "adID": 987,
+        "title": "black Jacket",
+        "price": 700,
+        "categories": ["Fashion"],
+        "addedDate": "2/16/2021",
+        "phone": "010 378 87 845",
+        "images": ["3.png", "4.jpg"],
+        "details": {
+          "model": "Addids",
+          "addType": "For Sale",
+          "year": "2019",
+          "paymentCapital": "Cash",
+          "color": "Black",
+          "description": "Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Maiores Ullam Pariatur Dicta Quam Nesciunt Quo Quae, Modi, Temporibus Fuga Soluta Exercitationem In Impedit Obcaecati Perspiciatis Inventore Id Sint Recusandae Necessitatibus."
+        },
+        "actions": {
+          "inCart": false,
+          "inFav": false
+        }
+      }
+    ]
   }
 ]
