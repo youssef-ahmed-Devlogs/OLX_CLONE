@@ -4,7 +4,7 @@
       {
         "id": 1,
         "name": "Ahmed",
-        "profileImg": "user-pic1.jpg",
+        "profileImg": "user-pic2.jpg",
         "joinDate": "2/15/2022",
         "city": "Cairo",
         "activeState": true,
@@ -13,7 +13,7 @@
       {
         "id": 2,
         "name": "Abdo",
-        "profileImg": "user-pic2.jpg",
+        "profileImg": "user-pic3.jpg",
         "joinDate": "7/9/2002",
         "city": "Giza",
         "activeState": false,
@@ -52,12 +52,12 @@
         "categories": ["Fashion"],
         "addedDate": "2/16/2021",
         "phone": "010 378 87 845",
-        "images": ["3.png", "4.jpg"],
+        "images": ["3.jpg", "4.jpg"],
         "details": {
           "model": "Addids",
-          "addType": "For Sale",
+          "add-type": "For Sale",
           "year": "2019",
-          "paymentCapital": "Cash",
+          "payment-capital": "Cash",
           "color": "Black",
           "description": "Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Maiores Ullam Pariatur Dicta Quam Nesciunt Quo Quae, Modi, Temporibus Fuga Soluta Exercitationem In Impedit Obcaecati Perspiciatis Inventore Id Sint Recusandae Necessitatibus."
         },

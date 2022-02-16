@@ -65,27 +65,162 @@ swiperConf(".top__products", 3);
 
 // START AD DETAILS PAGE
 
-// fancy box
-if (document.querySelector(".fancy-gallery") != null) {
-  Fancybox.bind('[data-fancybox="gallery"]', {
-    Toolbar: true,
+if (document.querySelector(".ad__deials__page") !== null) {
+  const productCard = document.querySelectorAll(".product");
+  const leftSectionContainer = document.querySelector(".left-section");
+  const adPublisherContainer = document.querySelector(".ad__publisher");
 
-    caption: function (fancybox, carousel, slide) {
-      let caption = slide.caption;
-
-      return (
-        (caption.length ? caption + "<br />" : "") +
-        "Image " +
-        (slide.index + 1) +
-        " of " +
-        carousel.pages.length
-      );
-    },
+  productCard.forEach((p) => {
+    p.addEventListener("click", () => {
+      localStorage.setItem("adid", JSON.stringify(p.dataset.adid));
+    });
   });
-}
 
-swiperConf(".other__ads__seller", 3);
-swiperConf(".another__products", 4);
+  async function renderAdPage() {
+    const adID = JSON.parse(localStorage.getItem("adid"));
+    const { ads, users } = await getData();
+    const { userID, title, images, details } = ads.find(
+      (ad) => ad.adID == adID
+    );
+    const { name, profileImg, joinDate } = users.find(
+      (user) => user.id == userID
+    );
+
+    function renderAdDetailsLeft() {
+      // Render Ad Details Top Left Colmun | main info
+      function renderProductInfo() {
+        let info = [];
+        for (const key in details) {
+          if (key !== "description") {
+            info.push(`
+          <li>
+          <span> ${key.replace("-", " ")} </span>
+          <span>
+          <strong> ${details[key]} </strong>
+          </span>
+          </li>
+        `);
+          }
+        }
+
+        return info.join("");
+      }
+
+      const content = `
+
+        <div class="product_title_heading mt-6">
+          <h2 class="section__head">${title}</h2>
+        </div>
+
+        <div class="addDetails-img fancy-gallery">
+        <div>
+        ${images
+          .map(
+            (img, i) =>
+              `
+              
+              <a
+              data-fancybox="gallery"
+              data-caption="Headphone"
+              href="../assets/images/${img}"
+              >
+              <img
+                  src="../assets/images/${img}"
+                  ${i == 0 ? `class="main-img first-img"` : `class="main-img"`}
+                  alt=""
+                />
+              </a>
+            
+            `
+          )
+          .join("")}
+          
+        </div>
+      </div>
+
+      <div class="desc-of-items text-center">
+        <div class="row">
+          <div class="col">
+            <div class="left-star">
+              <i class="far fa-star"></i>
+              <span>Add to favoite</span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="right-report">
+              <i class="far fa-flag"></i>
+              <span> report</span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="add_to_favourit">
+              <i class="fas fa-shopping-bag"></i>
+              <span> Add To card</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-info mb-4">
+        <ul class="unstyled">
+            
+            ${renderProductInfo()}
+            
+          
+        </ul>
+      </div>
+      <div class="product__desc">
+        <h2 class="section__head">Product Description</h2>
+      </div>
+      <div class="product-desc">
+        ${details.description}
+      </div>
+
+  
+  
+  `;
+      leftSectionContainer.innerHTML = content;
+    }
+
+    renderAdDetailsLeft();
+
+    // Render the ad publisher Content
+
+    adPublisherContainer.innerHTML = `
+        <div>
+          <img src="../assets/icons/${profileImg}" alt="${name}" />
+        </div>
+        <div>
+          <h5><a href="profile.html">${name}</a></h5>
+        </div>
+        <p class="text-center mt-1">On site since ${joinDate}</p>
+    `;
+  }
+
+  renderAdPage();
+
+  // fancy box
+  if (document.querySelector(".fancy-gallery") != null) {
+    Fancybox.bind('[data-fancybox="gallery"]', {
+      Toolbar: true,
+
+      caption: function (fancybox, carousel, slide) {
+        let caption = slide.caption;
+
+        return (
+          (caption.length ? caption + "<br />" : "") +
+          "Image " +
+          (slide.index + 1) +
+          " of " +
+          carousel.pages.length
+        );
+      },
+    });
+  }
+
+  swiperConf(".other__ads__seller", 3);
+  swiperConf(".another__products", 4);
+}
 
 // END AD DETAILS PAGE
 
@@ -143,41 +278,9 @@ function swiperBigView(selector) {
   });
 }
 
-// =============== //
+async function getData() {
+  const dataResponse = await fetch("../data/data.json");
+  const data = await dataResponse.json();
 
-const TitleHeading = document.getElementById("section__HedTitle");
-const fancy_galeery = document.getElementById("fancy-gallery");
-
-async function minpulateData() {
-  const responses = await fetch("../data/data.json");
-  const data = await responses.json();
-  console.log(data[0].ads[0].details.model);
-  TitleHeading.innerHTML = data[0].ads[0].details.model;
-  data.forEach((item) => {
-    const fancyBoxData = ` <div>
-      <a
-        data-fancybox="gallery"
-        data-caption="Hello, World!"
-        href="../assets/${item.ads[0].images[0]}"
-      >
-      <a
-      data-fancybox="gallery"
-      data-caption="pc"
-      href="../assets/${item.ads[0].images[1]}"
-    >
-    <a
-    data-fancybox="gallery"
-    data-caption="Headphone"
-    href="../assets/images/1.png"
-  >
-        <img
-          src="../assets/images/1.png"
-          class="main-img"
-          alt=""
-        />
-      </a>
-    </div> `;
-    fancy_galeery.appendChild(fancyBoxData);
-  });
+  return await { ...data[0] };
 }
-minpulateData();
