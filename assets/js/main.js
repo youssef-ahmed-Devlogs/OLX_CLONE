@@ -147,6 +147,7 @@ function swiperBigView(selector) {
 
 const TitleHeading = document.getElementById("section__HedTitle");
 const fancy_galeery = document.getElementById("fancy-gallery");
+
 async function minpulateData() {
   const responses = await fetch("../data/data.json");
   const data = await responses.json();
