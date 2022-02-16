@@ -142,3 +142,41 @@ function swiperBigView(selector) {
     },
   });
 }
+
+// =============== //
+
+const TitleHeading = document.getElementById("section__HedTitle");
+const fancy_galeery = document.getElementById("fancy-gallery");
+async function minpulateData() {
+  const responses = await fetch("../data/data.json");
+  const data = await responses.json();
+  console.log(data[0].ads[0].details.model);
+  TitleHeading.innerHTML = data[0].ads[0].details.model;
+  data.forEach((item) => {
+    const fancyBoxData = ` <div>
+      <a
+        data-fancybox="gallery"
+        data-caption="Hello, World!"
+        href="../assets/${item.ads[0].images[0]}"
+      >
+      <a
+      data-fancybox="gallery"
+      data-caption="pc"
+      href="../assets/${item.ads[0].images[1]}"
+    >
+    <a
+    data-fancybox="gallery"
+    data-caption="Headphone"
+    href="../assets/images/1.png"
+  >
+        <img
+          src="../assets/images/1.png"
+          class="main-img"
+          alt=""
+        />
+      </a>
+    </div> `;
+    fancy_galeery.appendChild(fancyBoxData);
+  });
+}
+minpulateData();

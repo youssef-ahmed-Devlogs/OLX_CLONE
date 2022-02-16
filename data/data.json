@@ -68,19 +68,63 @@
       },
       {
         "userID": 2,
-        "adID": 987,
-        "title": "black Jacket",
-        "price": 700,
-        "categories": ["Fashion"],
-        "addedDate": "2/16/2021",
-        "phone": "010 378 87 845",
-        "images": ["3.png", "4.jpg"],
+        "adID": 986,
+        "title": "PC",
+        "price": 1200,
+        "categories": ["technology"],
+        "addedDate": "12/11/2021",
+        "phone": "011 89 332 54",
+        "images": ["2.png", "1.jpg"],
         "details": {
-          "model": "Addids",
+          "model": "MacBook",
+          "addType": "For Sale",
+          "year": "2014",
+          "paymentCapital": "Cash",
+          "color": "silver",
+          "description": "Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Maiores Ullam Pariatur Dicta Quam Nesciunt Quo Quae, Modi, Temporibus Fuga Soluta Exercitationem In Impedit Obcaecati Perspiciatis Inventore Id Sint Recusandae Necessitatibus."
+        },
+        "actions": {
+          "inCart": false,
+          "inFav": false
+        }
+      },
+      {
+        "userID": 2,
+        "adID": 912,
+        "title": "Book",
+        "price": 150,
+        "categories": ["Books"],
+        "addedDate": "8/11/2019",
+        "phone": "011 89 332 54",
+        "images": ["book.jpg", "1.jpg"],
+        "details": {
+          "model": "Elequent",
           "addType": "For Sale",
           "year": "2019",
           "paymentCapital": "Cash",
-          "color": "Black",
+          "color": "yellow",
+          "description": "Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Maiores Ullam Pariatur Dicta Quam Nesciunt Quo Quae, Modi, Temporibus Fuga Soluta Exercitationem In Impedit Obcaecati Perspiciatis Inventore Id Sint Recusandae Necessitatibus."
+        },
+        "actions": {
+          "inCart": false,
+          "inFav": false
+        }
+      },
+      {
+        "userID": 2,
+        "adID": 910,
+        "title": "kindle",
+        "price": 150,
+        "categories": ["technology"],
+        "addedDate": "4/11/2019",
+        "phone": "012 86 332 54",
+        "images": ["kindle.jpg", "1.jpg"],
+        "details": {
+          "model": "tablet",
+          "addType": "For Sale",
+          "year": "2022",
+          "paymentCapital": "Cash",
+          "color": "black",
           "description": "Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Maiores Ullam Pariatur Dicta Quam Nesciunt Quo Quae, Modi, Temporibus Fuga Soluta Exercitationem In Impedit Obcaecati Perspiciatis Inventore Id Sint Recusandae Necessitatibus."
         },
         "actions": {
